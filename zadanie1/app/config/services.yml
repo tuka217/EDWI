@@ -1,0 +1,67 @@
+# Learn more about services, parameters and containers at
+# https://symfony.com/doc/current/service_container.html
+parameters:
+    #parameter_name: value
+
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        # automatically injects dependencies in your services
+        autowire: true
+        # automatically registers your services as commands, event subscribers, etc.
+        autoconfigure: true
+    # controllers are imported separately to make sure they're public
+    # and have a tag that allows actions to type-hint services
+    AppBundle\Controller\:
+        resource: '../../src/AppBundle/Controller'
+        public: true
+        tags: ['controller.service_arguments']
+    app.math.algorithm_calculator:
+        class: AppBundle\Math\AlgorithmCalculator
+        arguments:
+          - %kernel.project_dir%
+    app.helper.dir_scanner:
+        class: AppBundle\Helper\DirScanner
+        arguments:
+          - %kernel.project_dir%
+    app.helper.words_sorter:
+        class: AppBundle\Helper\WordsSorter
+        arguments:
+          - %kernel.project_dir%
+    app.helper.dictionary:
+        class: AppBundle\Helper\DictionaryHelper
+        arguments:
+          - "@app.helper.dir_scanner"
+          - %kernel.project_dir%
+    app.calculator.resemblance:
+        class: AppBundle\Math\ResemblanceCalculator
+        arguments:
+          - "@app.helper.dictionary"
+    app.helper.words_sorter:
+        class: AppBundle\Helper\WordsSorter
+        arguments:
+          - %kernel.project_dir%
+    app.parser.hyperlink:
+        class: AppBundle\Helper\HyperlinkParser
+        arguments:
+          - "@app.helper.dir_scanner"
+          - %kernel.project_dir%
+    app.helper.file_saver:
+        class: AppBundle\Helper\FileSaver
+        arguments:
+          - %kernel.project_dir%
+    app.helper.hyperlink_parser_recursion:
+        class: AppBundle\Helper\HyperlinkParserRecursion
+        arguments:
+          - "@app.helper.file_saver"
+          - "@app.parser.hyperlink"
+          - %kernel.project_dir%
+    app.helper.book_processor:
+        class: AppBundle\Helper\BookProcessor
+        arguments:
+          - "@app.helper.dir_scanner"
+          - "@ivory_lucene_search"
+    app.helper.query:
+        class: AppBundle\Helper\QueryHelper
+        arguments:
+          - "@ivory_lucene_search"

@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="pl" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Sortowanie bąbelkowe – Wikipedia, wolna encyklopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Sortowanie_bąbelkowe","wgTitle":"Sortowanie bąbelkowe","wgCurRevisionId":51249442,"wgRevisionId":51249442,"wgArticleId":5720,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Artykuły wymagające uzupełnienia źródeł od 2012-11","Algorytmy sortowania"],"wgBreakFrames":false,"wgPageContentLanguage":"pl","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t."," \t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","styczeń","luty","marzec","kwiecień","maj","czerwiec","lipiec","sierpień","wrzesień","październik","listopad","grudzień"],"wgMonthNamesShort":["","sty","lut","mar","kwi","maj","cze","lip","sie","wrz","paź","lis","gru"],"wgRelevantPageName":"Sortowanie_bąbelkowe","wgRelevantArticleId":5720,"wgRequestId":"WjOsqQpAIDEAAEsQ7aMAAAAD","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"accuracy":{"levels":1,"quality":2,"pristine":4}}},"wgStableRevisionId":51249442,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsShouldSendModuleToUser":true,"wgPopupsConflictsWithNavPopupGadget":false,"wgVisualEditor":{"pageLanguageCode":"pl","pageLanguageDir":"ltr","pageVariantFallbacks":"pl","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"pl","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"polski","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q60864","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.gadget.small-references":"ready","ext.gadget.main-page-css":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.math.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.flaggedRevs.basic":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0g479aj",function($,jQuery,require,module){mw.user.options.set({"variant":"pl"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["ext.math.scripts","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.maps","ext.gadget.heading-icons","ext.gadget.refToolbar","ext.gadget.edit-buttons","ext.gadget.edit-summaries","ext.gadget.edit-first-section","ext.gadget.edit-summary-warning","ext.gadget.wikibugs","ext.gadget.nuxTBKeys","ext.gadget.enhanced-upload","ext.gadget.map-toggler","ext.gadget.ReferenceTooltips","ext.gadget.main-page-js","ext.gadget.pope","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=pl&amp;modules=ext.flaggedRevs.basic%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=pl&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=pl&amp;modules=ext.gadget.main-page-css%2Csmall-references&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=pl&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.31.0-wmf.12"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/3/37/Bubble_sort_animation.gif"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/pl.m.wikipedia.org/wiki/Sortowanie_b%C4%85belkowe"/>
+<link rel="alternate" type="application/x-wiki" title="Edytuj" href="/w/index.php?title=Sortowanie_b%C4%85belkowe&amp;action=edit"/>
+<link rel="edit" title="Edytuj" href="/w/index.php?title=Sortowanie_b%C4%85belkowe&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (pl)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//pl.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://pl.wikipedia.org/wiki/Sortowanie_b%C4%85belkowe"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=pl&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Sortowanie_bąbelkowe rootpage-Sortowanie_bąbelkowe skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div><div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="pl">Sortowanie bąbelkowe</h1>			<div id="bodyContent" class="mw-body-content">
+				<div id="siteSub" class="noprint">Z Wikipedii, wolnej encyklopedii</div>				<div id="contentSub"></div>
+								<div id="jump-to-nav" class="mw-jump">
+					Skocz do:					<a href="#mw-head">nawigacja</a>, 					<a href="#p-search">szukaj</a>
+				</div>
+				<div id="mw-content-text" lang="pl" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table style="" class="metadata plainlinks ambox ambox-content">
+<tr>
+<td class="ambox-image">
+<div style="width:52px;"><a href="/wiki/Wikipedia:Weryfikowalno%C5%9B%C4%87" title="Wikipedia:Weryfikowalność"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/64/Question_book-4.svg/50px-Question_book-4.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/64/Question_book-4.svg/75px-Question_book-4.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/64/Question_book-4.svg/100px-Question_book-4.svg.png 2x" data-file-width="262" data-file-height="204" /></a></div>
+</td>
+<td class="ambox-text"><b>Ten artykuł od 2012-11 wymaga <a href="/wiki/Wikipedia:Weryfikowalno%C5%9B%C4%87" title="Wikipedia:Weryfikowalność">zweryfikowania</a> podanych informacji.</b><br />
+Należy podać (wiarygodne) źródła, najlepiej w formie dokładnych <a href="/wiki/Pomoc:Przypisy" title="Pomoc:Przypisy">przypisów bibliograficznych</a>.<br />
+<small>Część lub nawet wszystkie informacje w artykule mogą być nieprawdziwe. Jako pozbawione źródeł mogą zostać zakwestionowane i usunięte.</small><br />
+<span style="color: DimGray; font-size:80%">Po wyeliminowaniu niedoskonałości należy usunąć szablon <a href="/wiki/Szablon:Dopracowa%C4%87" title="Szablon:Dopracować">{{Dopracować}}</a> z tego artykułu.</span></td>
+</tr>
+</table>
+<table class="infobox">
+<tr style="text-align:center; color:black; background-color:#EAECF0; border-bottom:1px solid #aaa;">
+<td colspan="2" style="padding:0;">
+<table cellpadding="4" cellspacing="0" style="width:100% !important; display:table; margin:0px; background-color:transparent;">
+<tr>
+<td style="font-size:120%; vertical-align:middle;"><span style="font-weight:bold;">Sortowanie bąbelkowe</span></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="background-color: White; text-align:center; font-size:95%;"><a href="/wiki/Plik:Bubble_sort_animation.gif" class="image"><img alt="Bubble sort animation.gif" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/37/Bubble_sort_animation.gif/240px-Bubble_sort_animation.gif" width="240" height="203" srcset="//upload.wikimedia.org/wikipedia/commons/3/37/Bubble_sort_animation.gif 1.5x" data-file-width="280" data-file-height="237" /></a><br />
+Przykład działania algorytmu sortowania bąbelkowego.</td>
+</tr>
+<tr>
+<td style="background-color: White;">Rodzaj</td>
+<td style="width:150px; background-color: White;"><a href="/wiki/Sortowanie" title="Sortowanie">Sortowanie</a></td>
+</tr>
+<tr>
+<td style="background-color: White;">Struktura danych</td>
+<td style="width:150px; background-color: White;"><a href="/wiki/Tablica_(informatyka)" title="Tablica (informatyka)">Tablica</a>, <a href="/wiki/Lista" title="Lista">lista</a></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center; font-weight:bold;">Złożoność</td>
+</tr>
+<tr>
+<td style="background-color: White;">Czasowa</td>
+<td style="width:150px; background-color: White"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(n^{2})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6cd9594a16cb898b8f2a2dff9227a385ec183392" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.081ex; height:3.176ex;" alt="O(n^{2})" /></span></td>
+</tr>
+<tr>
+<td style="background-color: White;">Pamięciowa</td>
+<td style="width:150px; background-color: White"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(1)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e66384bc40452c5452f33563fe0e27e803b0cc21" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.787ex; height:2.843ex;" alt="O(1)" /></span></td>
+</tr>
+</table>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/Plik:Bubblesort-edited-color.svg" class="image"><img alt="Wizualizacja sortowania bąbelkowego" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/83/Bubblesort-edited-color.svg/300px-Bubblesort-edited-color.svg.png" width="300" height="250" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/83/Bubblesort-edited-color.svg/450px-Bubblesort-edited-color.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/83/Bubblesort-edited-color.svg/600px-Bubblesort-edited-color.svg.png 2x" data-file-width="512" data-file-height="427" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:Bubblesort-edited-color.svg" class="internal" title="Powiększ"></a></div>
+Wizualizacja sortowania bąbelkowego</div>
+</div>
+</div>
+<p><b>Sortowanie bąbelkowe</b> (<a href="/wiki/J%C4%99zyk_angielski" title="Język angielski">ang.</a> <i>bubble sort</i>) – prosta metoda <a href="/wiki/Sortowanie" title="Sortowanie">sortowania</a> o <a href="/wiki/Z%C5%82o%C5%BCono%C5%9B%C4%87_obliczeniowa" title="Złożoność obliczeniowa">złożoności</a> czasowej <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(n^{2})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6cd9594a16cb898b8f2a2dff9227a385ec183392" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.081ex; height:3.176ex;" alt="O(n^{2})" /></span> i pamięciowej <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(1)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e66384bc40452c5452f33563fe0e27e803b0cc21" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.787ex; height:2.843ex;" alt="O(1)" /></span>.</p>
+<p>Polega na porównywaniu dwóch kolejnych elementów i zamianie ich kolejności, jeżeli zaburza ona porządek, w jakim się sortuje tablicę. Sortowanie kończy się, gdy podczas kolejnego przejścia nie dokonano żadnej zmiany.</p>
+<p></p>
+<div id="toc" class="toc">
+<div class="toctitle">
+<h2>Spis treści</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Dowód_matematyczny"><span class="tocnumber">1</span> <span class="toctext">Dowód matematyczny</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Złożoność_obliczeniowa"><span class="tocnumber">2</span> <span class="toctext">Złożoność obliczeniowa</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Modyfikacje_powodujące_ulepszenie_czasu"><span class="tocnumber">2.1</span> <span class="toctext">Modyfikacje powodujące ulepszenie czasu</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Przykład_działania"><span class="tocnumber">3</span> <span class="toctext">Przykład działania</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Pseudokod"><span class="tocnumber">4</span> <span class="toctext">Pseudokod</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Implementacja"><span class="tocnumber">5</span> <span class="toctext">Implementacja</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Linki_zewnętrzne"><span class="tocnumber">6</span> <span class="toctext">Linki zewnętrzne</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span id="Dow.C3.B3d_matematyczny"></span><span class="mw-headline" id="Dowód_matematyczny">Dowód matematyczny</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sortowanie_b%C4%85belkowe&amp;veaction=edit&amp;section=1" class="mw-editsection-visualeditor" title="Edytuj sekcję: Dowód matematyczny">edytuj</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Sortowanie_b%C4%85belkowe&amp;action=edit&amp;section=1" title="Edytuj sekcję: Dowód matematyczny">edytuj kod</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Algorytm opiera się na zasadzie maksimum, tj. każda liczba jest mniejsza lub równa od liczby maksymalnej. Porównując kolejno liczby można wyznaczyć największą z nich. Następnie ciąg częściowo posortowany (mający liczbę maksymalną), można skrócić o tę liczbę i ponowić szukanie maksimum, już bez elementów odrzuconych i tak długo, aż zostanie nam jeden element. Otrzymane kolejne maksima są coraz mniejsze przez co ciąg jest uporządkowany.</p>
+<h2><span id="Z.C5.82o.C5.BCono.C5.9B.C4.87_obliczeniowa"></span><span class="mw-headline" id="Złożoność_obliczeniowa">Złożoność obliczeniowa</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sortowanie_b%C4%85belkowe&amp;veaction=edit&amp;section=2" class="mw-editsection-visualeditor" title="Edytuj sekcję: Złożoność obliczeniowa">edytuj</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Sortowanie_b%C4%85belkowe&amp;action=edit&amp;section=2" title="Edytuj sekcję: Złożoność obliczeniowa">edytuj kod</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/Plik:Bubble-sort-example-300px.gif" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif" width="300" height="180" class="thumbimage" data-file-width="300" data-file-height="180" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:Bubble-sort-example-300px.gif" class="internal" title="Powiększ"></a></div>
+Przykład działania</div>
+</div>
+</div>
+<p>Algorytm wykonuje n-1 przejść, a w każdym przejściu wykonuje n-k porównań (gdzie k=1,2..n-1 to numer przejścia), przez co jego teoretyczna złożoność czasowa wynosi <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(n^{2})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6cd9594a16cb898b8f2a2dff9227a385ec183392" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.081ex; height:3.176ex;" alt="O(n^{2})" /></span>. W podstawowej wersji algorytmu nie można tego czasu skrócić, a każda permutacja powoduje, że algorytm jest wykonywany w czasie pesymistycznym.</p>
+<h3><span id="Modyfikacje_powoduj.C4.85ce_ulepszenie_czasu"></span><span class="mw-headline" id="Modyfikacje_powodujące_ulepszenie_czasu">Modyfikacje powodujące ulepszenie czasu</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sortowanie_b%C4%85belkowe&amp;veaction=edit&amp;section=3" class="mw-editsection-visualeditor" title="Edytuj sekcję: Modyfikacje powodujące ulepszenie czasu">edytuj</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Sortowanie_b%C4%85belkowe&amp;action=edit&amp;section=3" title="Edytuj sekcję: Modyfikacje powodujące ulepszenie czasu">edytuj kod</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Algorytm można rozbudować tak, by czas optymistyczny był lepszy. Najłatwiejsze jest dodanie flagi informującej, czy w danej iteracji doszło do zmiany. Flaga jest zerowana na wejściu w przebiegu pętli, w przypadku natrafienia na zmianę jest podnoszona, a po wykonaniu przejścia sprawdzana. Jeśli nie było zmian, to sortowanie jest zakończone. Modyfikacja ta wprawdzie wydłuża czas wykonania jednego przejścia przez pętlę (gdyż trzeba wyzerować flagę, podnieść ją i sprawdzić), jednakże w wariancie optymistycznym (ciąg częściowo posortowany) może zaoszczędzić iteracji, przez co algorytm będzie działać szybciej.</p>
+<h2><span id="Przyk.C5.82ad_dzia.C5.82ania"></span><span class="mw-headline" id="Przykład_działania">Przykład działania</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sortowanie_b%C4%85belkowe&amp;veaction=edit&amp;section=4" class="mw-editsection-visualeditor" title="Edytuj sekcję: Przykład działania">edytuj</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Sortowanie_b%C4%85belkowe&amp;action=edit&amp;section=4" title="Edytuj sekcję: Przykład działania">edytuj kod</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Ciąg wejściowy <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">[</mo>
+        <mn>4</mn>
+        <mo>,</mo>
+        <mn>2</mn>
+        <mo>,</mo>
+        <mn>5</mn>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mn>7</mn>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle [4,2,5,1,7]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/37b88f3468a1f5b9dc257a751532595397c54cb7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.357ex; height:2.843ex;" alt="[4,2,5,1,7]" /></span>. Każdy wiersz symbolizuje wypchnięcie kolejnego największego elementu na koniec („wypłynięcie największego bąbelka”). Niebieskim kolorem oznaczono końcówkę ciągu już posortowanego.</p>
+<table>
+<tr>
+<td colspan="2">
+<dl>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">[</mo>
+        <munder>
+          <mrow class="MJX-TeXAtom-OP">
+            <munder>
+              <mstyle mathcolor="#ED1B23">
+                <mn>4</mn>
+                <mo>,</mo>
+                <mn>2</mn>
+              </mstyle>
+              <mo>&#x23DF;<!-- ⏟ --></mo>
+            </munder>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+            <mo>&gt;</mo>
+            <mn>2</mn>
+          </mrow>
+        </munder>
+        <mo>,</mo>
+        <mn>5</mn>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mn>7</mn>
+        <mo stretchy="false">]</mo>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mo stretchy="false">[</mo>
+        <mn>2</mn>
+        <mo>,</mo>
+        <munder>
+          <mrow class="MJX-TeXAtom-OP">
+            <munder>
+              <mstyle mathcolor="#3C8031">
+                <mn>4</mn>
+                <mo>,</mo>
+                <mn>5</mn>
+              </mstyle>
+              <mo>&#x23DF;<!-- ⏟ --></mo>
+            </munder>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+            <mo>&lt;</mo>
+            <mn>5</mn>
+          </mrow>
+        </munder>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mn>7</mn>
+        <mo stretchy="false">]</mo>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mo stretchy="false">[</mo>
+        <mn>2</mn>
+        <mo>,</mo>
+        <mn>4</mn>
+        <mo>,</mo>
+        <munder>
+          <mrow class="MJX-TeXAtom-OP">
+            <munder>
+              <mstyle mathcolor="#ED1B23">
+                <mn>5</mn>
+                <mo>,</mo>
+                <mn>1</mn>
+              </mstyle>
+              <mo>&#x23DF;<!-- ⏟ --></mo>
+            </munder>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>5</mn>
+            <mo>&gt;</mo>
+            <mn>1</mn>
+          </mrow>
+        </munder>
+        <mo>,</mo>
+        <mn>7</mn>
+        <mo stretchy="false">]</mo>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mo stretchy="false">[</mo>
+        <mn>2</mn>
+        <mo>,</mo>
+        <mn>4</mn>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <munder>
+          <mrow class="MJX-TeXAtom-OP">
+            <munder>
+              <mstyle mathcolor="#3C8031">
+                <mn>5</mn>
+                <mo>,</mo>
+                <mn>7</mn>
+              </mstyle>
+              <mo>&#x23DF;<!-- ⏟ --></mo>
+            </munder>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>5</mn>
+            <mo>&lt;</mo>
+            <mn>7</mn>
+          </mrow>
+        </munder>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle [\underbrace {\color {Red}4,2} _{4&gt;2},5,1,7]\rightarrow [2,\underbrace {\color {OliveGreen}4,5} _{4&lt;5},1,7]\rightarrow [2,4,\underbrace {\color {Red}5,1} _{5&gt;1},7]\rightarrow [2,4,1,\underbrace {\color {OliveGreen}5,7} _{5&lt;7}]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/02466c921a6f72c99557c636787e5671295e94bd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.338ex; width:58.219ex; height:6.343ex;" alt="[\underbrace {\color {Red}4,2} _{4&gt;2},5,1,7]\rightarrow [2,\underbrace {\color {OliveGreen}4,5} _{4&lt;5},1,7]\rightarrow [2,4,\underbrace {\color {Red}5,1} _{5&gt;1},7]\rightarrow [2,4,1,\underbrace {\color {OliveGreen}5,7} _{5&lt;7}]" /></span></dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td>
+<dl>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">[</mo>
+        <munder>
+          <mrow class="MJX-TeXAtom-OP">
+            <munder>
+              <mstyle mathcolor="#3C8031">
+                <mn>2</mn>
+                <mo>,</mo>
+                <mn>4</mn>
+              </mstyle>
+              <mo>&#x23DF;<!-- ⏟ --></mo>
+            </munder>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mo>&lt;</mo>
+            <mn>4</mn>
+          </mrow>
+        </munder>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mn>5</mn>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle mathcolor="#2D2F92">
+            <mn>7</mn>
+          </mstyle>
+        </mrow>
+        <mo stretchy="false">]</mo>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mo stretchy="false">[</mo>
+        <mn>2</mn>
+        <mo>,</mo>
+        <munder>
+          <mrow class="MJX-TeXAtom-OP">
+            <munder>
+              <mstyle mathcolor="#ED1B23">
+                <mn>4</mn>
+                <mo>,</mo>
+                <mn>1</mn>
+              </mstyle>
+              <mo>&#x23DF;<!-- ⏟ --></mo>
+            </munder>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+            <mo>&gt;</mo>
+            <mn>1</mn>
+          </mrow>
+        </munder>
+        <mo>,</mo>
+        <mn>5</mn>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle mathcolor="#2D2F92">
+            <mn>7</mn>
+          </mstyle>
+        </mrow>
+        <mo stretchy="false">]</mo>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mo stretchy="false">[</mo>
+        <mn>2</mn>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <munder>
+          <mrow class="MJX-TeXAtom-OP">
+            <munder>
+              <mstyle mathcolor="#3C8031">
+                <mn>4</mn>
+                <mo>,</mo>
+                <mn>5</mn>
+              </mstyle>
+              <mo>&#x23DF;<!-- ⏟ --></mo>
+            </munder>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+            <mo>&lt;</mo>
+            <mn>5</mn>
+          </mrow>
+        </munder>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle mathcolor="#2D2F92">
+            <mn>7</mn>
+          </mstyle>
+        </mrow>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle [\underbrace {\color {OliveGreen}2,4} _{2&lt;4},1,5,{\color {Blue}7}]\rightarrow [2,\underbrace {\color {Red}4,1} _{4&gt;1},5,{\color {Blue}7}]\rightarrow [2,1,\underbrace {\color {OliveGreen}4,5} _{4&lt;5},{\color {Blue}7}]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d145ce8b95a045e1d7baa3a9c9cf4554cdf09773" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.338ex; width:42.758ex; height:6.343ex;" alt="[\underbrace {\color {OliveGreen}2,4} _{2&lt;4},1,5,{\color {Blue}7}]\rightarrow [2,\underbrace {\color {Red}4,1} _{4&gt;1},5,{\color {Blue}7}]\rightarrow [2,1,\underbrace {\color {OliveGreen}4,5} _{4&lt;5},{\color {Blue}7}]" /></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">[</mo>
+        <munder>
+          <mrow class="MJX-TeXAtom-OP">
+            <munder>
+              <mstyle mathcolor="#ED1B23">
+                <mn>2</mn>
+                <mo>,</mo>
+                <mn>1</mn>
+              </mstyle>
+              <mo>&#x23DF;<!-- ⏟ --></mo>
+            </munder>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mo>&gt;</mo>
+            <mn>1</mn>
+          </mrow>
+        </munder>
+        <mo>,</mo>
+        <mn>4</mn>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle mathcolor="#2D2F92">
+            <mn>5</mn>
+          </mstyle>
+        </mrow>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle mathcolor="#2D2F92">
+            <mn>7</mn>
+          </mstyle>
+        </mrow>
+        <mo stretchy="false">]</mo>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mo stretchy="false">[</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <munder>
+          <mrow class="MJX-TeXAtom-OP">
+            <munder>
+              <mstyle mathcolor="#3C8031">
+                <mn>2</mn>
+                <mo>,</mo>
+                <mn>4</mn>
+              </mstyle>
+              <mo>&#x23DF;<!-- ⏟ --></mo>
+            </munder>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mo>&lt;</mo>
+            <mn>4</mn>
+          </mrow>
+        </munder>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle mathcolor="#2D2F92">
+            <mn>5</mn>
+          </mstyle>
+        </mrow>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle mathcolor="#2D2F92">
+            <mn>7</mn>
+          </mstyle>
+        </mrow>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle [\underbrace {\color {Red}2,1} _{2&gt;1},4,{\color {Blue}5},{\color {Blue}7}]\rightarrow [1,\underbrace {\color {OliveGreen}2,4} _{2&lt;4},{\color {Blue}5},{\color {Blue}7}]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ab5950838c6ea317d4aeec469e338223f3f9536c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.338ex; width:27.297ex; height:6.343ex;" alt="[\underbrace {\color {Red}2,1} _{2&gt;1},4,{\color {Blue}5},{\color {Blue}7}]\rightarrow [1,\underbrace {\color {OliveGreen}2,4} _{2&lt;4},{\color {Blue}5},{\color {Blue}7}]" /></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">[</mo>
+        <munder>
+          <mrow class="MJX-TeXAtom-OP">
+            <munder>
+              <mstyle mathcolor="#3C8031">
+                <mn>1</mn>
+                <mo>,</mo>
+                <mn>2</mn>
+              </mstyle>
+              <mo>&#x23DF;<!-- ⏟ --></mo>
+            </munder>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+            <mo>&lt;</mo>
+            <mn>2</mn>
+          </mrow>
+        </munder>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle mathcolor="#2D2F92">
+            <mn>4</mn>
+          </mstyle>
+        </mrow>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle mathcolor="#2D2F92">
+            <mn>5</mn>
+          </mstyle>
+        </mrow>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle mathcolor="#2D2F92">
+            <mn>7</mn>
+          </mstyle>
+        </mrow>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle [\underbrace {\color {OliveGreen}1,2} _{1&lt;2},{\color {Blue}4},{\color {Blue}5},{\color {Blue}7}]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/828cca046f5a557157884249c2c8d18699370192" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.338ex; width:11.836ex; height:6.343ex;" alt="[\underbrace {\color {OliveGreen}1,2} _{1&lt;2},{\color {Blue}4},{\color {Blue}5},{\color {Blue}7}]" /></span></dd>
+</dl>
+</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Pseudokod">Pseudokod</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sortowanie_b%C4%85belkowe&amp;veaction=edit&amp;section=5" class="mw-editsection-visualeditor" title="Edytuj sekcję: Pseudokod">edytuj</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Sortowanie_b%C4%85belkowe&amp;action=edit&amp;section=5" title="Edytuj sekcję: Pseudokod">edytuj kod</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Pseudokod wersji podstawowej algorytmu dla tablicy o rozmiarze n (elementy tablicy są numerowane od 0 do n-1):</p>
+<pre>
+<code><b>procedure</b> bubbleSort( A <b>:</b> lista elementów do posortowania )
+  n = liczba_elementów(A)
+   <b>do</b>
+    <b>for (i = 0; i &lt; n-1; i++) </b>do:
+      <b>if</b> A[i] &gt; A[i+1] <b>then</b>
+        swap(A[i], A[i+1])
+      <b>end if</b>
+    <b>end for</b>
+    n = n-1
+  <b>while</b> n &gt; 1
+<b>end procedure</b>
+</code>
+</pre>
+<h2><span class="mw-headline" id="Implementacja">Implementacja</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sortowanie_b%C4%85belkowe&amp;veaction=edit&amp;section=6" class="mw-editsection-visualeditor" title="Edytuj sekcję: Implementacja">edytuj</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Sortowanie_b%C4%85belkowe&amp;action=edit&amp;section=6" title="Edytuj sekcję: Implementacja">edytuj kod</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="https://pl.wikibooks.org/wiki/Kody_%C5%BAr%C3%B3d%C5%82owe/Sortowanie_b%C4%85belkowe" class="extiw" title="b:Kody źródłowe/Sortowanie bąbelkowe">Zobacz przykłady implementacji tego algorytmu na stronie Wikibooks</a></li>
+</ul>
+<h2><span id="Linki_zewn.C4.99trzne"></span><span class="mw-headline" id="Linki_zewnętrzne">Linki zewnętrzne</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sortowanie_b%C4%85belkowe&amp;veaction=edit&amp;section=7" class="mw-editsection-visualeditor" title="Edytuj sekcję: Linki zewnętrzne">edytuj</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Sortowanie_b%C4%85belkowe&amp;action=edit&amp;section=7" title="Edytuj sekcję: Linki zewnętrzne">edytuj kod</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=lyZQPjUT5B4">Algorytm przedstawiony z wykorzystaniem węgierskiego tańca</a></li>
+</ul>
+<table class="navbox do-not-make-smaller" cellspacing="0" style=";">
+<tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse" style="width:100%;background:transparent;color:inherit;">
+<tr>
+<th style=";" colspan="2" class="navbox-title">
+<div style="float:left; width:6em;text-align:left;">
+<div class="noprint plainlinks" style="background-color:transparent; padding:0; font-weight:normal; font-size:xx-small; color:#002bb8;&#160;;;border:none; white-space:nowrap;"><a href="/wiki/Szablon:Algorytmy_sortowania" title="Szablon:Algorytmy sortowania"><span title="Pokaż ten szablon" style="color:#002bb8; ;;border:none;">p</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/w/index.php?title=Dyskusja_szablonu:Algorytmy_sortowania&amp;action=edit&amp;redlink=1" class="new" title="Dyskusja szablonu:Algorytmy sortowania (strona nie istnieje)"><span style="color:#002bb8; ;;border:none;" title="Dyskusja na temat tego szablonu">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a class="external text" href="//pl.wikipedia.org/w/index.php?title=Szablon:Algorytmy_sortowania&amp;action=edit"><span style="color:#002bb8;&#160;;;border:none;" title="Możesz edytować ten szablon. Użyj przycisku podglądu przed zapisaniem zmian.">e</span></a></div>
+</div>
+<span class="noprint" style="font-size:110%;">Algorytmy <a href="/wiki/Sortowanie" title="Sortowanie">sortowania</a></span></th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;"><b>Algorytmy stabilne</b></td>
+<td style="width:100%;text-align:left;border-left:2px solid #fdfdfd;padding:0px;;;" class="navbox-list hlist navbox-odd">
+<div style="padding:0em 0.25em">
+<p><span><a class="mw-selflink selflink">Sortowanie bąbelkowe</a> • <a href="/wiki/Sortowanie_przez_wstawianie" title="Sortowanie przez wstawianie">Sortowanie przez wstawianie</a> • <a href="/wiki/Sortowanie_przez_scalanie" title="Sortowanie przez scalanie">Sortowanie przez scalanie</a> • <a href="/wiki/Sortowanie_przez_zliczanie" title="Sortowanie przez zliczanie">Sortowanie przez zliczanie</a> • <a href="/wiki/Sortowanie_kube%C5%82kowe" title="Sortowanie kubełkowe">Sortowanie kubełkowe</a> • <a href="/wiki/Sortowanie_pozycyjne" title="Sortowanie pozycyjne">Sortowanie pozycyjne</a> • <a href="/wiki/Sortowanie_biblioteczne" title="Sortowanie biblioteczne">Sortowanie biblioteczne</a></span></p>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=";;"><b>Algorytmy niestabilne</b></td>
+<td style="width:100%;text-align:left;border-left:2px solid #fdfdfd;width:100%;padding:0px;;;" class="navbox-list hlist navbox-even">
+<div style="padding:0em 0.25em">
+<p><span><a href="/wiki/Sortowanie_przez_wybieranie" title="Sortowanie przez wybieranie">Sortowanie przez wybieranie</a> • <a href="/wiki/Sortowanie_Shella" title="Sortowanie Shella">Sortowanie Shella</a> • <a href="/wiki/Sortowanie_grzebieniowe" title="Sortowanie grzebieniowe">Sortowanie grzebieniowe</a> • <a href="/wiki/Sortowanie_szybkie" title="Sortowanie szybkie">Sortowanie szybkie</a> • <a href="/wiki/Sortowanie_introspektywne" title="Sortowanie introspektywne">Sortowanie introspektywne</a> • <a href="/wiki/Sortowanie_przez_kopcowanie" title="Sortowanie przez kopcowanie">Sortowanie przez kopcowanie</a></span></p>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1240
+Cached time: 20171215110440
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.100 seconds
+Real time usage: 0.201 seconds
+Preprocessor visited node count: 851/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 19299/2097152 bytes
+Template argument size: 5577/2097152 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 2/500
+Lua time usage: 0.013/10.000 seconds
+Lua memory usage: 1.23 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   89.454      1 -total
+ 40.80%   36.499      1 Szablon:Dopracować
+ 37.69%   33.715      1 Szablon:Algorytmy_sortowania
+ 35.88%   32.095      1 Szablon:Navbox
+ 20.73%   18.541      1 Szablon:Algorytm_infobox
+ 20.65%   18.471      1 Szablon:Mbox
+ 17.82%   15.940      1 Szablon:Ambox
+  9.09%    8.135      1 Szablon:Ikona
+  8.36%    7.479      1 Szablon:Tnavbar
+  5.16%    4.620      4 Szablon:Infobox_wiersz_dodaj
+-->
+</div>
+<!-- Saved in parser cache with key plwiki:stable-pcache:idhash:5720-0!canonical!math=5 and timestamp 20171215110440 and revision id 51249442
+ -->
+<noscript><img src="//pl.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Źródło: „<a dir="ltr" href="https://pl.wikipedia.org/w/index.php?title=Sortowanie_bąbelkowe&amp;oldid=51249442">https://pl.wikipedia.org/w/index.php?title=Sortowanie_bąbelkowe&amp;oldid=51249442</a>”					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Specjalna:Kategorie" title="Specjalna:Kategorie">Kategoria</a>: <ul><li><a href="/wiki/Kategoria:Algorytmy_sortowania" title="Kategoria:Algorytmy sortowania">Algorytmy sortowania</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Ukryta kategoria: <ul><li><a href="/wiki/Kategoria:Artyku%C5%82y_wymagaj%C4%85ce_uzupe%C5%82nienia_%C5%BAr%C3%B3de%C5%82_od_2012-11" title="Kategoria:Artykuły wymagające uzupełnienia źródeł od 2012-11">Artykuły wymagające uzupełnienia źródeł od 2012-11</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Menu nawigacyjne</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Narzędzia osobiste</h3>
+						<ul>
+							<li id="pt-anonuserpage">Nie jesteś zalogowany</li><li id="pt-anontalk"><a href="/wiki/Specjalna:Moja_dyskusja" title="Dyskusja użytkownika dla tego adresu IP [n]" accesskey="n">Dyskusja</a></li><li id="pt-anoncontribs"><a href="/wiki/Specjalna:M%C3%B3j_wk%C5%82ad" title="Lista edycji wykonanych z tego adresu IP [y]" accesskey="y">Edycje</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Specjalna:Utw%C3%B3rz_konto&amp;returnto=Sortowanie+b%C4%85belkowe" title="Zachęcamy do stworzenia konta i zalogowania, ale nie jest to obowiązkowe.">Utwórz konto</a></li><li id="pt-login"><a href="/w/index.php?title=Specjalna:Zaloguj&amp;returnto=Sortowanie+b%C4%85belkowe" title="Zachęcamy do zalogowania się, choć nie jest to obowiązkowe. [o]" accesskey="o">Zaloguj się</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Przestrzenie nazw</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Sortowanie_b%C4%85belkowe" title="Zobacz stronę treści [c]" accesskey="c">Artykuł</a></span></li><li id="ca-talk" class="new"><span><a href="/w/index.php?title=Dyskusja:Sortowanie_b%C4%85belkowe&amp;action=edit&amp;redlink=1" rel="discussion" title="Dyskusja o zawartości tej strony [t]" accesskey="t">Dyskusja</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Warianty</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Widok</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Sortowanie_b%C4%85belkowe">Czytaj</a></span></li><li id="ca-ve-edit" class="collapsible"><span><a href="/w/index.php?title=Sortowanie_b%C4%85belkowe&amp;veaction=edit" title="Edytuj tę stronę [v]" accesskey="v">Edytuj</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Sortowanie_b%C4%85belkowe&amp;action=edit" title="Edytuj tę stronę [e]" accesskey="e">Edytuj kod źródłowy</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Sortowanie_b%C4%85belkowe&amp;action=history" title="Starsze wersje tej strony. [h]" accesskey="h">Historia i autorzy</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>Więcej</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Szukaj</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Przeszukaj Wikipedię" title="Przeszukaj Wikipedię [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Specjalna:Szukaj" name="title"/><input type="submit" name="fulltext" value="Szukaj" title="Szukaj wprowadzonego tekstu w treści stron" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Przejdź" title="Przejdź do strony o dokładnie takim tytule, o ile istnieje" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna"  title="Strona główna"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Nawigacja</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna" title="Przejdź na stronę główną [z]" accesskey="z">Strona główna</a></li><li id="n-randompage"><a href="/wiki/Specjalna:Losowa_strona" title="Załaduj losową stronę [x]" accesskey="x">Losuj artykuł</a></li><li id="n-Kategorie"><a href="/wiki/Portal:Kategorie_G%C5%82%C3%B3wne">Kategorie artykułów</a></li><li id="n-Featured-articles"><a href="/wiki/Wikipedia:Wyr%C3%B3%C5%BCniona_zawarto%C5%9B%C4%87_Wikipedii">Najlepsze artykuły</a></li><li id="n-FAQ"><a href="/wiki/Pomoc:FAQ">Częste pytania (FAQ)</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-zmiany' aria-labelledby='p-zmiany-label'>
+			<h3 id='p-zmiany-label'>Dla czytelników</h3>
+			<div class="body">
+								<ul>
+					<li id="n-czytelnicy"><a href="/wiki/Wikipedia:O_Wikipedii">O Wikipedii</a></li><li id="n-bug_in_article"><a href="/wiki/Wikipedia:Zg%C5%82o%C5%9B_b%C5%82%C4%85d_w_artykule">Zgłoś błąd</a></li><li id="n-bad-image"><a href="/wiki/Wikipedia:Zg%C5%82oszone_grafiki">Zgłoś błąd w pliku</a></li><li id="n-contact"><a href="/wiki/Wikipedia:Kontakt_z_wikipedystami">Kontakt</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_pl.wikipedia.org&amp;uselang=pl" title="Pomóż nam">Wspomóż Wikipedię</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-edytorzy' aria-labelledby='p-edytorzy-label'>
+			<h3 id='p-edytorzy-label'>Dla wikipedystów</h3>
+			<div class="body">
+								<ul>
+					<li id="n-pierwsze-kroki"><a href="/wiki/Pomoc:Pierwsze_kroki">Pierwsze kroki</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Portal_wikipedyst%C3%B3w" title="O projekcie - co możesz zrobić, gdzie możesz znaleźć informacje">Portal wikipedystów</a></li><li id="n-Noticeboard"><a href="/wiki/Wikipedia:Tablica_og%C5%82osze%C5%84">Ogłoszenia</a></li><li id="n-Guidelines"><a href="/wiki/Wikipedia:Zasady">Zasady</a></li><li id="n-helppage-name"><a href="/wiki/Pomoc:Spis_tre%C5%9Bci">Pomoc</a></li><li id="n-recentchanges"><a href="/wiki/Specjalna:Ostatnie_zmiany" title="Lista ostatnich zmian w Wikipedii. [r]" accesskey="r">Ostatnie zmiany</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Narzędzia</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Specjalna:Linkuj%C4%85ce/Sortowanie_b%C4%85belkowe" title="Pokaż listę wszystkich stron linkujących do tej strony [j]" accesskey="j">Linkujące</a></li><li id="t-recentchangeslinked"><a href="/wiki/Specjalna:Zmiany_w_linkowanych/Sortowanie_b%C4%85belkowe" rel="nofollow" title="Ostatnie zmiany w stronach, do których ta strona linkuje [k]" accesskey="k">Zmiany w linkowanych</a></li><li id="t-upload"><a href="//pl.wikipedia.org/wiki/Wikipedia:Prześlij_plik" title="Prześlij pliki [u]" accesskey="u">Prześlij plik</a></li><li id="t-specialpages"><a href="/wiki/Specjalna:Strony_specjalne" title="Lista wszystkich specjalnych stron [q]" accesskey="q">Strony specjalne</a></li><li id="t-permalink"><a href="/w/index.php?title=Sortowanie_b%C4%85belkowe&amp;oldid=51249442" title="Stały link do tej wersji strony">Link do tej wersji</a></li><li id="t-info"><a href="/w/index.php?title=Sortowanie_b%C4%85belkowe&amp;action=info" title="Więcej informacji na temat tej strony">Informacje o tej stronie</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q60864" title="Link do powiązanego elementu w repozytorium danych [g]" accesskey="g">Element Wikidanych</a></li><li id="t-cite"><a href="/w/index.php?title=Specjalna:Cytuj&amp;page=Sortowanie_b%C4%85belkowe&amp;id=51249442" title="Informacja o tym jak należy cytować tę stronę">Cytowanie tego artykułu</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Drukuj lub eksportuj</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Specjalna:Ksi%C4%85%C5%BCka&amp;bookcmd=book_creator&amp;referer=Sortowanie+b%C4%85belkowe">Utwórz książkę</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Specjalna:ElectronPdf&amp;page=Sortowanie+b%C4%85belkowe&amp;action=show-download-screen">Pobierz jako PDF</a></li><li id="t-print"><a href="/w/index.php?title=Sortowanie_b%C4%85belkowe&amp;printable=yes" title="Wersja do wydruku [p]" accesskey="p">Wersja do druku</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>W innych projektach</h3>
+			<div class="body">
+								<ul>
+					<li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:Bubble_sort" hreflang="en">Wikimedia Commons</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>W innych językach</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D8%AA%D8%B1%D8%AA%D9%8A%D8%A8_%D8%A7%D9%84%D9%81%D9%82%D8%A7%D8%B9%D8%A7%D8%AA" title="ترتيب الفقاعات – arabski" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-az"><a href="https://az.wikipedia.org/wiki/Qabarc%C4%B1ql%C4%B1_nizamlama" title="Qabarcıqlı nizamlama – azerbejdżański" lang="az" hreflang="az" class="interlanguage-link-target">Azərbaycanca</a></li><li class="interlanguage-link interwiki-bn"><a href="https://bn.wikipedia.org/wiki/%E0%A6%AC%E0%A6%BE%E0%A6%AC%E0%A6%B2_%E0%A6%B8%E0%A6%B0%E0%A7%8D%E0%A6%9F" title="বাবল সর্ট – bengalski" lang="bn" hreflang="bn" class="interlanguage-link-target">বাংলা</a></li><li class="interlanguage-link interwiki-bg"><a href="https://bg.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%BD%D0%B0_%D0%BC%D0%B5%D1%85%D1%83%D1%80%D1%87%D0%B5%D1%82%D0%BE" title="Метод на мехурчето – bułgarski" lang="bg" hreflang="bg" class="interlanguage-link-target">Български</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Bubble-sort" title="Bubble-sort – kataloński" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Bublinkov%C3%A9_%C5%99azen%C3%AD" title="Bublinkové řazení – czeski" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-da"><a href="https://da.wikipedia.org/wiki/Boblesortering" title="Boblesortering – duński" lang="da" hreflang="da" class="interlanguage-link-target">Dansk</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Bubblesort" title="Bubblesort – niemiecki" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-et"><a href="https://et.wikipedia.org/wiki/Mullsortimine" title="Mullsortimine – estoński" lang="et" hreflang="et" class="interlanguage-link-target">Eesti</a></li><li class="interlanguage-link interwiki-el"><a href="https://el.wikipedia.org/wiki/%CE%A4%CE%B1%CE%BE%CE%B9%CE%BD%CF%8C%CE%BC%CE%B7%CF%83%CE%B7_%CF%86%CF%85%CF%83%CE%B1%CE%BB%CE%AF%CE%B4%CE%B1%CF%82" title="Ταξινόμηση φυσαλίδας – grecki" lang="el" hreflang="el" class="interlanguage-link-target">Ελληνικά</a></li><li class="interlanguage-link interwiki-en"><a href="https://en.wikipedia.org/wiki/Bubble_sort" title="Bubble sort – angielski" lang="en" hreflang="en" class="interlanguage-link-target">English</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Ordenamiento_de_burbuja" title="Ordenamiento de burbuja – hiszpański" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D9%85%D8%B1%D8%AA%D8%A8%E2%80%8C%D8%B3%D8%A7%D8%B2%DB%8C_%D8%AD%D8%A8%D8%A7%D8%A8%DB%8C" title="مرتب‌سازی حبابی – perski" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Tri_%C3%A0_bulles" title="Tri à bulles – francuski" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EA%B1%B0%ED%92%88_%EC%A0%95%EB%A0%AC" title="거품 정렬 – koreański" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-hy"><a href="https://hy.wikipedia.org/wiki/%D5%8A%D5%B2%D5%BA%D5%BB%D5%A1%D5%AF%D5%A1%D5%B5%D5%AB%D5%B6_%D5%BF%D5%A5%D5%BD%D5%A1%D5%AF%D5%A1%D5%BE%D5%B8%D6%80%D5%B8%D6%82%D5%B4" title="Պղպջակային տեսակավորում – ormiański" lang="hy" hreflang="hy" class="interlanguage-link-target">Հայերեն</a></li><li class="interlanguage-link interwiki-is"><a href="https://is.wikipedia.org/wiki/V%C3%ADxlunarr%C3%B6%C3%B0un" title="Víxlunarröðun – islandzki" lang="is" hreflang="is" class="interlanguage-link-target">Íslenska</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Bubble_sort" title="Bubble sort – włoski" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%9E%D7%99%D7%95%D7%9F_%D7%91%D7%95%D7%A2%D7%95%D7%AA" title="מיון בועות – hebrajski" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-kk"><a href="https://kk.wikipedia.org/wiki/%D0%9A%D3%A9%D0%BF%D1%96%D1%80%D1%88%D1%96%D0%BA%D1%82%D1%96%D0%BA_%D1%81%D2%B1%D1%80%D1%8B%D0%BF%D1%82%D0%B0%D1%83" title="Көпіршіктік сұрыптау – kazachski" lang="kk" hreflang="kk" class="interlanguage-link-target">Қазақша</a></li><li class="interlanguage-link interwiki-ku"><a href="https://ku.wikipedia.org/wiki/R%C3%AAzkerdi%C5%9F%C3%AA_%C3%A7imokan" title="Rêzkerdişê çimokan – kurdyjski" lang="ku" hreflang="ku" class="interlanguage-link-target">Kurdî</a></li><li class="interlanguage-link interwiki-lb"><a href="https://lb.wikipedia.org/wiki/Blosenzort%C3%A9ierung" title="Blosenzortéierung – luksemburski" lang="lb" hreflang="lb" class="interlanguage-link-target">Lëtzebuergesch</a></li><li class="interlanguage-link interwiki-lt"><a href="https://lt.wikipedia.org/wiki/Burbulo_rikiavimo_algoritmas" title="Burbulo rikiavimo algoritmas – litewski" lang="lt" hreflang="lt" class="interlanguage-link-target">Lietuvių</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/Bubor%C3%A9krendez%C3%A9s" title="Buborékrendezés – węgierski" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-ml"><a href="https://ml.wikipedia.org/wiki/%E0%B4%AC%E0%B4%AC%E0%B4%BF%E0%B5%BE_%E0%B4%B8%E0%B5%8B%E0%B5%BC%E0%B4%9F%E0%B5%8D%E0%B4%9F%E0%B5%8D" title="ബബിൾ സോർട്ട് – malajalam" lang="ml" hreflang="ml" class="interlanguage-link-target">മലയാളം</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Bubblesort" title="Bubblesort – niderlandzki" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%96%E3%83%AB%E3%82%BD%E3%83%BC%E3%83%88" title="バブルソート – japoński" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="https://no.wikipedia.org/wiki/Sorteringsalgoritme#Boblesortering" title="Sorteringsalgoritme – norweski" lang="no" hreflang="no" class="interlanguage-link-target">Norsk</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Bubble_sort" title="Bubble sort – portugalski" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0_%D0%BF%D1%83%D0%B7%D1%8B%D1%80%D1%8C%D0%BA%D0%BE%D0%BC" title="Сортировка пузырьком – rosyjski" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-simple"><a href="https://simple.wikipedia.org/wiki/Bubble_sort" title="Bubble sort – Simple English" lang="simple" hreflang="simple" class="interlanguage-link-target">Simple English</a></li><li class="interlanguage-link interwiki-sk"><a href="https://sk.wikipedia.org/wiki/Bublinkov%C3%A9_triedenie" title="Bublinkové triedenie – słowacki" lang="sk" hreflang="sk" class="interlanguage-link-target">Slovenčina</a></li><li class="interlanguage-link interwiki-sl"><a href="https://sl.wikipedia.org/wiki/Mehur%C4%8Dno_urejanje" title="Mehurčno urejanje – słoweński" lang="sl" hreflang="sl" class="interlanguage-link-target">Slovenščina</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/Sortiranje_mehurom" title="Sortiranje mehurom – serbski" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Kuplalajittelu" title="Kuplalajittelu – fiński" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Bubbelsortering" title="Bubbelsortering – szwedzki" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-tl"><a href="https://tl.wikipedia.org/wiki/Bubble_sort" title="Bubble sort – tagalski" lang="tl" hreflang="tl" class="interlanguage-link-target">Tagalog</a></li><li class="interlanguage-link interwiki-th"><a href="https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%A5%E0%B8%B3%E0%B8%94%E0%B8%B1%E0%B8%9A%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%9F%E0%B8%AD%E0%B8%87" title="การเรียงลำดับแบบฟอง – tajski" lang="th" hreflang="th" class="interlanguage-link-target">ไทย</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/Kabarc%C4%B1k_s%C4%B1ralamas%C4%B1" title="Kabarcık sıralaması – turecki" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%A1%D0%BE%D1%80%D1%82%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D0%B1%D1%83%D0%BB%D1%8C%D0%B1%D0%B0%D1%88%D0%BA%D0%BE%D1%8E" title="Сортування бульбашкою – ukraiński" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-vi"><a href="https://vi.wikipedia.org/wiki/S%E1%BA%AFp_x%E1%BA%BFp_n%E1%BB%95i_b%E1%BB%8Dt" title="Sắp xếp nổi bọt – wietnamski" lang="vi" hreflang="vi" class="interlanguage-link-target">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F" title="冒泡排序 – chiński" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q60864#sitelinks-wikipedia" title="Edytuj linki pomiędzy wersjami językowymi" class="wbc-editpage">Edytuj linki</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> Tę stronę ostatnio edytowano 12:04, 15 gru 2017.</li>
+								<li id="footer-info-copyright">Tekst udostępniany na <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.pl">licencji Creative Commons: uznanie autorstwa, na tych samych warunkach</a>, z możliwością obowiązywania dodatkowych ograniczeń.
+Zobacz szczegółowe informacje o <a href="https://wikimediafoundation.org/wiki/Warunki_korzystania">warunkach korzystania</a>.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Polityka ochrony prywatności</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:O_Wikipedii" title="Wikipedia:O Wikipedii">O Wikipedii</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:Korzystasz_z_Wikipedii_tylko_na_w%C5%82asn%C4%85_odpowiedzialno%C5%9B%C4%87" title="Wikipedia:Korzystasz z Wikipedii tylko na własną odpowiedzialność">Korzystasz z Wikipedii tylko na własną odpowiedzialność</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Dla deweloperów</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Komunikat na temat ciasteczek</a></li>
+								<li id="footer-places-mobileview"><a href="//pl.m.wikipedia.org/w/index.php?title=Sortowanie_b%C4%85belkowe&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Wersja dla urządzeń mobilnych</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.100","walltime":"0.201","ppvisitednodes":{"value":851,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":19299,"limit":2097152},"templateargumentsize":{"value":5577,"limit":2097152},"expansiondepth":{"value":11,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%   89.454      1 -total"," 40.80%   36.499      1 Szablon:Dopracować"," 37.69%   33.715      1 Szablon:Algorytmy_sortowania"," 35.88%   32.095      1 Szablon:Navbox"," 20.73%   18.541      1 Szablon:Algorytm_infobox"," 20.65%   18.471      1 Szablon:Mbox"," 17.82%   15.940      1 Szablon:Ambox","  9.09%    8.135      1 Szablon:Ikona","  8.36%    7.479      1 Szablon:Tnavbar","  5.16%    4.620      4 Szablon:Infobox_wiersz_dodaj"]},"scribunto":{"limitreport-timeusage":{"value":"0.013","limit":"10.000"},"limitreport-memusage":{"value":1289275,"limit":52428800}},"cachereport":{"origin":"mw1240","timestamp":"20171215110440","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":78,"wgHostname":"mw1328"});});</script>
+	</body>
+</html>

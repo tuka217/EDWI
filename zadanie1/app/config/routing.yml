@@ -1,0 +1,27 @@
+menu:
+    path:     /
+    defaults: { _controller: AppBundle:Default:menu }
+
+pass_address:
+    path:     /pass-address
+    defaults: { _controller: AppBundle:Default:passAddress }
+
+run_algorithm:
+    path:     /run-algorithm
+    defaults: { _controller: AppBundle:Default:runAlgorithm }
+
+documents_resemblance:
+    path:     /documents-resemblance
+    defaults: { _controller: AppBundle:Default:documentsResemblance }
+
+hyperlink:
+    path: /hyperlink
+    defaults: { _controller: AppBundle:Default:hyperlink }
+
+process_book:
+    path: /process-book
+    defaults: { _controller: AppBundle:Default:processBook }
+
+find_books:
+    path: /find-books
+    defaults: { _controller: AppBundle:Default:findBooks }

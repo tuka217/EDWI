@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="pl" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Mikroprocesor – Wikipedia, wolna encyklopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Mikroprocesor","wgTitle":"Mikroprocesor","wgCurRevisionId":50665023,"wgRevisionId":50665023,"wgArticleId":3697,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Procesory"],"wgBreakFrames":false,"wgPageContentLanguage":"pl","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t."," \t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","styczeń","luty","marzec","kwiecień","maj","czerwiec","lipiec","sierpień","wrzesień","październik","listopad","grudzień"],"wgMonthNamesShort":["","sty","lut","mar","kwi","maj","cze","lip","sie","wrz","paź","lis","gru"],"wgRelevantPageName":"Mikroprocesor","wgRelevantArticleId":3697,"wgRequestId":"WiuIfApAAD8AAJxaarEAAAAD","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"accuracy":{"levels":1,"quality":2,"pristine":4}}},"wgStableRevisionId":50665023,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsShouldSendModuleToUser":true,"wgPopupsConflictsWithNavPopupGadget":false,"wgVisualEditor":{"pageLanguageCode":"pl","pageLanguageDir":"ltr","pageVariantFallbacks":"pl","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"pl","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"polski","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q5297","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.gadget.small-references":"ready","ext.gadget.main-page-css":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","mediawiki.page.gallery.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.flaggedRevs.basic":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0g479aj",function($,jQuery,require,module){mw.user.options.set({"variant":"pl"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["ext.cite.a11y","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.maps","ext.gadget.heading-icons","ext.gadget.refToolbar","ext.gadget.edit-buttons","ext.gadget.edit-summaries","ext.gadget.edit-first-section","ext.gadget.edit-summary-warning","ext.gadget.wikibugs","ext.gadget.nuxTBKeys","ext.gadget.enhanced-upload","ext.gadget.map-toggler","ext.gadget.ReferenceTooltips","ext.gadget.main-page-js","ext.gadget.pope","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=pl&amp;modules=ext.cite.styles%7Cext.flaggedRevs.basic%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.page.gallery.styles%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=pl&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=pl&amp;modules=ext.gadget.main-page-css%2Csmall-references&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=pl&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.31.0-wmf.11"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Sockel7-cpus.JPG/1200px-Sockel7-cpus.JPG"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/pl.m.wikipedia.org/wiki/Mikroprocesor"/>
+<link rel="alternate" type="application/x-wiki" title="Edytuj" href="/w/index.php?title=Mikroprocesor&amp;action=edit"/>
+<link rel="edit" title="Edytuj" href="/w/index.php?title=Mikroprocesor&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (pl)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//pl.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://pl.wikipedia.org/wiki/Mikroprocesor"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=pl&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Mikroprocesor rootpage-Mikroprocesor skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div><div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="pl">Mikroprocesor</h1>			<div id="bodyContent" class="mw-body-content">
+				<div id="siteSub" class="noprint">Z Wikipedii, wolnej encyklopedii</div>				<div id="contentSub"></div>
+								<div id="jump-to-nav" class="mw-jump">
+					Skocz do:					<a href="#mw-head">nawigacja</a>, 					<a href="#p-search">szukaj</a>
+				</div>
+				<div id="mw-content-text" lang="pl" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Plik:Sockel7-cpus.JPG" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/38/Sockel7-cpus.JPG/220px-Sockel7-cpus.JPG" width="220" height="146" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/38/Sockel7-cpus.JPG/330px-Sockel7-cpus.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/38/Sockel7-cpus.JPG/440px-Sockel7-cpus.JPG 2x" data-file-width="2560" data-file-height="1704" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:Sockel7-cpus.JPG" class="internal" title="Powiększ"></a></div>
+Przykładowe mikroprocesory</div>
+</div>
+</div>
+<p><b>Mikroprocesor</b> – <a href="/wiki/Uk%C5%82ad_cyfrowy" title="Układ cyfrowy">układ cyfrowy</a> wykonany jako pojedynczy <a href="/wiki/Uk%C5%82ad_scalony" title="Układ scalony">układ scalony</a> o wielkim stopniu integracji (<a href="/wiki/Uk%C5%82ad_scalony" title="Układ scalony">ULSI</a>) zdolny do wykonywania operacji cyfrowych według dostarczonego ciągu instrukcji.</p>
+<p>Mikroprocesor łączy funkcje centralnej jednostki obliczeniowej (<a href="/wiki/Procesor" title="Procesor">CPU</a>) w pojedynczym <a href="/wiki/P%C3%B3%C5%82przewodniki" title="Półprzewodniki">półprzewodnikowym</a> układzie scalonym. Pierwszy mikroprocesor działał w oparciu o <a href="/wiki/Architektura_4-bitowa" title="Architektura 4-bitowa">słowa 4-bitowe</a>, dzięki czemu <a href="/wiki/Tranzystor" title="Tranzystor">tranzystory</a> tworzące jego obwody logiczne mogły zmieścić się w jednym układzie.</p>
+<p>Mikroprocesor umożliwił rozwój <a href="/wiki/Mikrokomputer" title="Mikrokomputer">mikrokomputerów</a> w połowie <a href="/wiki/Lata_70._XX_wieku" title="Lata 70. XX wieku">lat 70. XX w.</a> Przed tym okresem, elektroniczne <a href="/wiki/Procesor" title="Procesor">CPU</a> były konstruowane z zajmujących wiele miejsca indywidualnych urządzeń przełączających, z których każde było odpowiednikiem zaledwie kilku <a href="/wiki/Tranzystor" title="Tranzystor">tranzystorów</a>. Poprzez zintegrowanie procesora w jeden lub kilka obwodów scalonych o coraz wyższej skali integracji (zawierających odpowiednik tysięcy lub milionów tranzystorów), stosunek możliwości do ceny procesora znacząco wzrósł. Od połowy lat siedemdziesiątych, dzięki intensywnemu rozwojowi układów scalonych, mikroprocesor stał się najbardziej rozpowszechnioną formą CPU, prawie całkowicie zastępując wszystkie inne.</p>
+<p><a href="/wiki/Ewolucja" title="Ewolucja">Ewolucję</a> mikroprocesora dobrze opisuje <a href="/wiki/Prawo_Moore%27a" class="mw-redirect" title="Prawo Moore'a">prawo Moore’a</a> mówiące o wzroście wydajności na przestrzeni lat. Mówi ono, że złożoność układów scalonych (liczba tranzystorów), przy zachowaniu minimalnego kosztu składników, będzie się podwajać co 18 miesięcy. Stwierdzenie to zachowuje prawdziwość od czasu wczesnych lat 70. Począwszy od układów porównywalnych z prostymi <a href="/wiki/Kalkulator" title="Kalkulator">kalkulatorami</a>, mikroprocesory osiągały coraz wyższą <a href="/wiki/Moc_obliczeniowa" title="Moc obliczeniowa">moc obliczeniową</a>, co w rezultacie doprowadziło do ich dominacji nad każdą inną formą <a href="/wiki/Komputer" title="Komputer">komputera</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div class="toctitle">
+<h2>Spis treści</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Historia_mikroprocesora"><span class="tocnumber">1</span> <span class="toctext">Historia mikroprocesora</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Początki"><span class="tocnumber">1.1</span> <span class="toctext">Początki</span></a>
+<ul>
+<li class="toclevel-3 tocsection-3"><a href="#Intel"><span class="tocnumber">1.1.1</span> <span class="toctext">Intel</span></a></li>
+<li class="toclevel-3 tocsection-4"><a href="#Garrett"><span class="tocnumber">1.1.2</span> <span class="toctext">Garrett</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#Texas_Instruments"><span class="tocnumber">1.1.3</span> <span class="toctext">Texas Instruments</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-6"><a href="#Prawa_patentowe"><span class="tocnumber">1.2</span> <span class="toctext">Prawa patentowe</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Mikroprocesory_8-bitowe"><span class="tocnumber">1.3</span> <span class="toctext">Mikroprocesory 8-bitowe</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Mikroprocesory_16-bitowe"><span class="tocnumber">1.4</span> <span class="toctext">Mikroprocesory 16-bitowe</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Mikroprocesory_32-bitowe"><span class="tocnumber">1.5</span> <span class="toctext">Mikroprocesory 32-bitowe</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Budowa_typowego_mikroprocesora"><span class="tocnumber">2</span> <span class="toctext">Budowa typowego mikroprocesora</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Polska"><span class="tocnumber">3</span> <span class="toctext">Polska</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Kalendarium"><span class="tocnumber">4</span> <span class="toctext">Kalendarium</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Rozwój_mikroprocesorów"><span class="tocnumber">5</span> <span class="toctext">Rozwój mikroprocesorów</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Kierunki_rozwoju_mikroprocesorów"><span class="tocnumber">6</span> <span class="toctext">Kierunki rozwoju mikroprocesorów</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#Galeria"><span class="tocnumber">7</span> <span class="toctext">Galeria</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#Zobacz_też"><span class="tocnumber">8</span> <span class="toctext">Zobacz też</span></a></li>
+<li class="toclevel-1"><a href="#Przypisy"><span class="tocnumber">9</span> <span class="toctext">Przypisy</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#Bibliografia"><span class="tocnumber">10</span> <span class="toctext">Bibliografia</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Historia_mikroprocesora">Historia mikroprocesora</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mikroprocesor&amp;action=edit&amp;section=1" title="Edytuj sekcję: Historia mikroprocesora">edytuj</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span id="Pocz.C4.85tki"></span><span class="mw-headline" id="Początki">Początki</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mikroprocesor&amp;action=edit&amp;section=2" title="Edytuj sekcję: Początki">edytuj</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Plik:Intel_4004.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/52/Intel_4004.jpg/220px-Intel_4004.jpg" width="220" height="212" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/5/52/Intel_4004.jpg 1.5x" data-file-width="300" data-file-height="289" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:Intel_4004.jpg" class="internal" title="Powiększ"></a></div>
+<a href="/wiki/Intel_4004" title="Intel 4004">Intel 4004</a> z 1971 roku</div>
+</div>
+</div>
+<p>Idea mikroprocesora była naturalną konsekwencją rozwoju <a href="/wiki/Technika" title="Technika">techniki</a> – jej urzeczywistnienie było jedynie kwestią czasu. Pracę nad <a href="/wiki/Prototyp" title="Prototyp">prototypem</a> mikroprocesora rozpoczęły trzy konkurujące ze sobą <a href="/wiki/Firma" title="Firma">firmy</a>. W efekcie, w zbliżonym czasie pojawiły się pierwsze układy nadające się do <a href="/wiki/Produkcja_seryjna" title="Produkcja seryjna">produkcji seryjnej</a>. Były to:</p>
+<ul>
+<li><a href="/wiki/Intel" title="Intel">Intel</a> (układ <a href="/wiki/Intel_4004" title="Intel 4004">4004</a>),</li>
+<li>Garrett AiResearch’s (Central Air Data Computer).</li>
+<li><a href="/wiki/Texas_Instruments" title="Texas Instruments">Texas Instruments</a> (<a href="/wiki/Texas_Instruments_TMS1000" title="Texas Instruments TMS1000">TMS 1000</a>),</li>
+</ul>
+<h4><span class="mw-headline" id="Intel">Intel</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mikroprocesor&amp;action=edit&amp;section=3" title="Edytuj sekcję: Intel">edytuj</a><span class="mw-editsection-bracket">]</span></span></h4>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Plik:KL_Intel_P4040.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/ff/KL_Intel_P4040.jpg/220px-KL_Intel_P4040.jpg" width="220" height="159" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/ff/KL_Intel_P4040.jpg/330px-KL_Intel_P4040.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/ff/KL_Intel_P4040.jpg/440px-KL_Intel_P4040.jpg 2x" data-file-width="1041" data-file-height="753" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:KL_Intel_P4040.jpg" class="internal" title="Powiększ"></a></div>
+<a href="/wiki/Intel_4040" title="Intel 4040">Intel 4040</a> z 1974 roku</div>
+</div>
+</div>
+<p>Jednym z twórców idei mikroprocesora był <a href="/wiki/Marcian_Hoff" title="Marcian Hoff">Marcian „Ted” Hoff</a> z nowo powstałej firmy <a href="/wiki/Intel" title="Intel">Intel</a>. Wpadł on na pomysł, by zamiast 12 niezależnych <a href="/wiki/Uk%C5%82ad_scalony" title="Układ scalony">układów scalonych</a> do <a href="/wiki/Kalkulator" title="Kalkulator">kalkulatorów</a> zaprojektować jeden, który będzie w stanie pełnić funkcje wszystkich tych elementów razem wziętych. Rezultatem prac <a href="/wiki/Marcian_Hoff" title="Marcian Hoff">Hoffa</a> oraz <a href="/wiki/Federico_Faggin" title="Federico Faggin">Federico Fagginiego</a> było powstanie 15 listopada 1971 r. pierwszego komercyjnego mikroprocesora czterobitowego o nazwie <a href="/wiki/Intel_4004" title="Intel 4004">4004</a>. Zawierał on 2300 <a href="/wiki/Tranzystor" title="Tranzystor">tranzystorów</a> i wykonany był w <a href="/wiki/Technologia" title="Technologia">technologii</a> <a href="/wiki/MOSFET" title="MOSFET">p-MOS</a>. Miał zbiór 46 <a href="/wiki/Rozkaz_(informatyka)" title="Rozkaz (informatyka)">rozkazów</a> (instrukcji) i działał przy maksymalnej <a href="/wiki/Cz%C4%99stotliwo%C5%9B%C4%87" title="Częstotliwość">częstotliwości</a> taktowania 740 <a href="/wiki/Herc" title="Herc">kHz</a> z prędkością wykonania 60 tys. rozkazów na sekundę. Został wykorzystany do <a href="/wiki/Kalkulator" title="Kalkulator">kalkulatorów</a> firmy <a href="/wiki/Busicom" title="Busicom">BUSICOM</a>. Pierwszym na świecie procesorem był jednak składający się z sześciu układów MOS układ <a href="/wiki/F14_CADC" title="F14 CADC">F14 CADC</a> używany w samolocie <a href="/wiki/Grumman_F-14_Tomcat" title="Grumman F-14 Tomcat">Grumman F-14 Tomcat</a>.</p>
+<h4><span class="mw-headline" id="Garrett">Garrett</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mikroprocesor&amp;action=edit&amp;section=4" title="Edytuj sekcję: Garrett">edytuj</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>W 1968 roku Garrett został zaproszony do pracy przy tworzeniu komputera dla myśliwca <a href="/wiki/Grumman_F-14_Tomcat" title="Grumman F-14 Tomcat">Grumman F-14 Tomcat</a>, który swoimi możliwościami miał przewyższać sterujące lotem systemy elektroniczne używane w <a href="/wiki/United_States_Navy" title="United States Navy">Marynarce Wojennej USA</a>. Projekt został ukończony w 1970 roku i używał opartego na technologii MOS układu scalonego („chip”) jako rdzenia CPU. Projekt był mniejszy i dużo bardziej niezawodny niż systemy mechaniczne, z którymi konkurował i został wprowadzony we wszystkich wczesnych modelach Tomcata. Jednakże był on tak zaawansowany, że Marynarka Wojenna odmówiła publikacji jego projektu aż do roku 1997. Z tego też powodu używany <a href="/wiki/Chipset" title="Chipset">chipset</a> (zestaw układów zaprojektowanych do współpracy ze sobą) CADC i MP944 nie są powszechnie znane nawet obecnie.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Plik:KL_TI_TMS1100.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/44/KL_TI_TMS1100.jpg/220px-KL_TI_TMS1100.jpg" width="220" height="143" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/44/KL_TI_TMS1100.jpg/330px-KL_TI_TMS1100.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/44/KL_TI_TMS1100.jpg/440px-KL_TI_TMS1100.jpg 2x" data-file-width="930" data-file-height="606" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:KL_TI_TMS1100.jpg" class="internal" title="Powiększ"></a></div>
+<a href="/wiki/Texas_Instruments_TMS1000" title="Texas Instruments TMS1000">TMS 1000</a> z 1971 roku</div>
+</div>
+</div>
+<h4><span class="mw-headline" id="Texas_Instruments">Texas Instruments</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mikroprocesor&amp;action=edit&amp;section=5" title="Edytuj sekcję: Texas Instruments">edytuj</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p><a href="/wiki/Texas_Instruments" title="Texas Instruments">TI</a> zbudowało 4-bitowy mikroprocesor <a href="/wiki/Texas_Instruments_TMS1000" title="Texas Instruments TMS1000">TMS 1000</a> oraz wyposażyło go w odpowiedni <a href="/wiki/Kod_%C5%BAr%C3%B3d%C5%82owy" title="Kod źródłowy">kod źródłowy</a>. W ten sposób 17 września 1971 r. powstał układ TMS1802NC, który posłużył jako scalony rdzeń <a href="/wiki/Kalkulator" title="Kalkulator">kalkulatora</a> TI-35. Pod względem pełnionej funkcji był to zatem odpowiednik intelowskiego <a href="/wiki/Intel_4004" title="Intel 4004">4004</a>.</p>
+<h3><span class="mw-headline" id="Prawa_patentowe">Prawa patentowe</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mikroprocesor&amp;action=edit&amp;section=6" title="Edytuj sekcję: Prawa patentowe">edytuj</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Texas_Instruments" title="Texas Instruments">TI</a> złożyło wniosek o przyznanie <a href="/wiki/Patent" title="Patent">patentu</a> na mikroprocesor 4 września 1973 r. Gary Boone dostał patent (U.S. Patent 3,757,306) dla architektury scalonego mikroprocesora. Nie wiadomo do końca, która firma jako pierwsza skonstruowała działający mikroprocesor. W roku 1971, jak i 1976 Intel i TI uzgodniły, że Intel będzie płacił TI pieniądze za prawa patentowe do mikroprocesora. Dokładny opis tych zdarzeń zawierają akta sprawy pomiędzy <a href="/wiki/Cyrix" title="Cyrix">Cyrixem</a> i Intelem, w których to TI występuje jako twórca i właściciel patentu na mikroprocesor. Co ciekawe, firmom trzecim został przyznany patent na coś, co w sumie może być „mikroprocesorem”.</p>
+<p>Również patent obejmujący konstrukcję pierwszego komputera jednoukładowego (<a href="/wiki/Mikrokontroler" title="Mikrokontroler">mikrokontrolera</a>) został przyznany Gary’emu Boone i Michaelowi J. Cochranowi z firmy <a href="/wiki/Texas_Instruments" title="Texas Instruments">TI</a> (U.S. Patent 4,074,351).</p>
+<h3><span class="mw-headline" id="Mikroprocesory_8-bitowe"><a href="/wiki/Architektura_8-bitowa" title="Architektura 8-bitowa">Mikroprocesory 8-bitowe</a></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mikroprocesor&amp;action=edit&amp;section=7" title="Edytuj sekcję: Mikroprocesory 8-bitowe">edytuj</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Plik:KL_Intel_C8008-1.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/ba/KL_Intel_C8008-1.jpg/220px-KL_Intel_C8008-1.jpg" width="220" height="141" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/ba/KL_Intel_C8008-1.jpg/330px-KL_Intel_C8008-1.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/ba/KL_Intel_C8008-1.jpg/440px-KL_Intel_C8008-1.jpg 2x" data-file-width="1026" data-file-height="658" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:KL_Intel_C8008-1.jpg" class="internal" title="Powiększ"></a></div>
+<a href="/wiki/Intel_8008" title="Intel 8008">Intel 8008</a> z 1972 roku</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Plik:Intel_C8080A_9064_33001_N8384_top.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Intel_C8080A_9064_33001_N8384_top.jpg/220px-Intel_C8080A_9064_33001_N8384_top.jpg" width="220" height="80" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Intel_C8080A_9064_33001_N8384_top.jpg/330px-Intel_C8080A_9064_33001_N8384_top.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Intel_C8080A_9064_33001_N8384_top.jpg/440px-Intel_C8080A_9064_33001_N8384_top.jpg 2x" data-file-width="790" data-file-height="287" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:Intel_C8080A_9064_33001_N8384_top.jpg" class="internal" title="Powiększ"></a></div>
+Mikroprocesor <a href="/wiki/Intel_8080" title="Intel 8080">Intel 8080</a> w <a href="/wiki/Dual_in-line_package" title="Dual in-line package">40-końcówkowej obudowie</a></div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Plik:MOS_6502AD_4585_top.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/49/MOS_6502AD_4585_top.jpg/220px-MOS_6502AD_4585_top.jpg" width="220" height="80" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/49/MOS_6502AD_4585_top.jpg/330px-MOS_6502AD_4585_top.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/49/MOS_6502AD_4585_top.jpg/440px-MOS_6502AD_4585_top.jpg 2x" data-file-width="790" data-file-height="287" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:MOS_6502AD_4585_top.jpg" class="internal" title="Powiększ"></a></div>
+Mikroprocesor <a href="/wiki/MOS_Technology_6502" title="MOS Technology 6502">MOS 6502</a> w obudowie <a href="/wiki/Dual_in-line_package" title="Dual in-line package">DIL-40</a> powstały w 1975 roku</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Plik:MOS_6501_6502_Ad_Sept_1975.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/14/MOS_6501_6502_Ad_Sept_1975.jpg/220px-MOS_6501_6502_Ad_Sept_1975.jpg" width="220" height="151" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/14/MOS_6501_6502_Ad_Sept_1975.jpg/330px-MOS_6501_6502_Ad_Sept_1975.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/14/MOS_6501_6502_Ad_Sept_1975.jpg/440px-MOS_6501_6502_Ad_Sept_1975.jpg 2x" data-file-width="2403" data-file-height="1650" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:MOS_6501_6502_Ad_Sept_1975.jpg" class="internal" title="Powiększ"></a></div>
+Reklama MOS 6502 z września 1975. Podczas gdy układy 8080 i 6800 były dostępne w cenie 179 USD, to konkurencyjna cena 6502 wynosiła jedynie 25 USD.</div>
+</div>
+</div>
+<p>Według „Historii Komputerów” (MIT Press), strony 220–221, Intel zawarł kontrakt z Computer Terminals Corporation, zwaną później Datapoint z San Antonio (Texas), dotyczący układu do terminalu, który właśnie opracowywała ta firma. Datapoint zrezygnował z późniejszego wykorzystywania tego <a href="/wiki/Uk%C5%82ad_scalony" title="Układ scalony">chipu</a>, natomiast Intel w kwietniu 1972 r. nadał mu nazwę 8008. Był to pierwszy na świecie mikroprocesor 8-bitowy. Stał się on podstawą sławnego MARK-8, zestawu komputerowego przedstawionego w magazynie Radio-Elektronika w 1974 r. Układ scalony 8008 oraz jego następca, sławny na cały świat <a href="/wiki/Intel_8080" title="Intel 8080">Intel 8080</a>, otworzyły rynek mikroprocesorów.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Plik:Zilog_Z-80_Microprocessor_ad_May_1976.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Zilog_Z-80_Microprocessor_ad_May_1976.jpg/220px-Zilog_Z-80_Microprocessor_ad_May_1976.jpg" width="220" height="146" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Zilog_Z-80_Microprocessor_ad_May_1976.jpg/330px-Zilog_Z-80_Microprocessor_ad_May_1976.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Zilog_Z-80_Microprocessor_ad_May_1976.jpg/440px-Zilog_Z-80_Microprocessor_ad_May_1976.jpg 2x" data-file-width="2460" data-file-height="1632" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:Zilog_Z-80_Microprocessor_ad_May_1976.jpg" class="internal" title="Powiększ"></a></div>
+Reklama <a href="/wiki/Zilog_Z80" title="Zilog Z80">Zilog Z80</a> z maja 1976 roku</div>
+</div>
+</div>
+<p>Procesory 8008 stały się prekursorami bardzo udanej serii <a href="/wiki/Intel_8080" title="Intel 8080">Intel 8080</a> (1974 r.), <a href="/wiki/Zilog_Z80" title="Zilog Z80">Zilog Z80</a> (1976 r.) oraz pochodnych 8-bitowych procesorów Intela. Konkurująca z tym układem <a href="/wiki/Motorola_6800" title="Motorola 6800">Motorola 6800</a> została wypuszczona na rynek w kwietniu 1974 roku. Architektura <a href="/wiki/Motorola_6800" title="Motorola 6800">6800</a> została rozbudowana przez firmę <a href="/wiki/MOS_Technology" title="MOS Technology">MOS Technology</a>, założoną przez wcześniejszych pracowników <a href="/wiki/Motorola" title="Motorola">Motoroli</a> – powstał w ten sposób układ <a href="/w/index.php?title=MOS_6501&amp;action=edit&amp;redlink=1" class="new" title="MOS 6501 (strona nie istnieje)">MOS 6501</a>, a następnie, po konflikcie dotyczącym <a href="/wiki/Prawo_autorskie" title="Prawo autorskie">praw autorskich</a>, układ <a href="/wiki/MOS_Technology_6502" title="MOS Technology 6502">MOS 6502</a>, który ujrzał światło dzienne w 1975 roku, stając się konkurencją dla Z80 pod względem <a href="/wiki/Cena_(ekonomia)" class="mw-redirect" title="Cena (ekonomia)">ceny</a> (i następnie – popularności).</p>
+<p>Zarówno komputery oparte na Z80, jak i 6502 mogły być produkowane względnie tanio dzięki prostocie <a href="/wiki/Magistrala_komunikacyjna" title="Magistrala komunikacyjna">magistrali</a> oraz zintegrowaniu elementów, które w alternatywnych projektach trafiały poza CPU (np. kontrolera pamięci w Z80). Były to cechy, które pozwoliły w latach 80. na przeprowadzenie <a href="/wiki/Rewolucja" title="Rewolucja">rewolucji</a> w postaci dostarczania do domów prostych komputerów jako zestawów do samodzielnego montażu, ewentualnie dostarczanie gotowych produktów (<a href="/wiki/Komputer_domowy" title="Komputer domowy">komputerów domowych</a>) w cenie 99$.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Plik:WDC_W65C02.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f6/WDC_W65C02.jpg/220px-WDC_W65C02.jpg" width="220" height="80" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f6/WDC_W65C02.jpg/330px-WDC_W65C02.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f6/WDC_W65C02.jpg/440px-WDC_W65C02.jpg 2x" data-file-width="790" data-file-height="287" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:WDC_W65C02.jpg" class="internal" title="Powiększ"></a></div>
+Mikroprocesor <a href="/wiki/WDC_65C02" title="WDC 65C02">WDC 65C02</a> z 1982 roku</div>
+</div>
+</div>
+<p><a href="/wiki/Western_Design_Center" title="Western Design Center">Western Design Center</a>, Inc. (WDC) zaprezentował w 1982 roku oparty na technologii CMOS <a href="/wiki/WDC_65C02" title="WDC 65C02">WDC 65C02</a> oraz sprzedał licencje kilku firmom, które to stały się rdzeniem komputerów osobistych <a href="/w/index.php?title=Apple_IIc&amp;action=edit&amp;redlink=1" class="new" title="Apple IIc (strona nie istnieje)">Apple IIc</a> oraz IIe, klasy wszczepialnych medycznych <a href="/wiki/Sta%C5%82a_elektrostymulacja_serca" title="Stała elektrostymulacja serca">rozruszników serca</a> i <a href="/wiki/Defibrylator" title="Defibrylator">defibrylatorów</a>, przemysłowych, konsumenckich i samochodowych urządzeń. WDC zapoczątkował <a href="/wiki/Licencja_oprogramowania" title="Licencja oprogramowania">licencjonowanie</a> technologii mikroprocesorowych, która była potem kontynuowana przez <a href="/wiki/Architektura_ARM" title="Architektura ARM">ARM</a> oraz innych producentów w <a href="/wiki/Lata_90._XX_wieku" title="Lata 90. XX wieku">latach 90. XX wieku</a>.</p>
+<p>Atutem <a href="/wiki/Motorola" title="Motorola">Motoroli</a> w świecie 8-bitowym był wprowadzony do produkcji w 1978 roku MC6809, dość kontrowersyjnie uważany za najmocniejszy i najlepszy spośród kiedykolwiek wyprodukowanych procesorów 8-bitowych. Jest on także uważany za najbardziej skomplikowany układowo projekt, który kiedykolwiek wprowadzono do użycia w mikroprocesorach. W nowszych układach skomplikowana logika układowa była już sukcesywnie zastępowana przez mikroprogramowanie, pozwalające na realizację tych samych operacji w układach zawierających znacznie mniej <a href="/wiki/Bramka_logiczna" title="Bramka logiczna">bramek logicznych</a>.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Plik:KL_Signetics_2650AN.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/75/KL_Signetics_2650AN.jpg/220px-KL_Signetics_2650AN.jpg" width="220" height="114" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/75/KL_Signetics_2650AN.jpg/330px-KL_Signetics_2650AN.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/75/KL_Signetics_2650AN.jpg/440px-KL_Signetics_2650AN.jpg 2x" data-file-width="1404" data-file-height="726" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:KL_Signetics_2650AN.jpg" class="internal" title="Powiększ"></a></div>
+Mikroprocesor Signetics 2650</div>
+</div>
+</div>
+<p>Kolejnym wczesnym 8-bitowym mikroprocesorem był Signetics 2650, który cieszył się sporym zainteresowaniem ze względu na swą innowacyjność oraz rozbudowaną <a href="/wiki/Lista_rozkaz%C3%B3w_procesora" title="Lista rozkazów procesora">listę rozkazów</a>.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Plik:KL_RCA_1802.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/69/KL_RCA_1802.jpg/220px-KL_RCA_1802.jpg" width="220" height="112" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/69/KL_RCA_1802.jpg/330px-KL_RCA_1802.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/69/KL_RCA_1802.jpg/440px-KL_RCA_1802.jpg 2x" data-file-width="1383" data-file-height="702" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:KL_RCA_1802.jpg" class="internal" title="Powiększ"></a></div>
+Mikroprocesor RCA 1802</div>
+</div>
+</div>
+<p>Ważnym mikroprocesorem w świecie lotów kosmicznych był RCA 1802 (zwany też CDP1802, RCA COSMAC) przedstawiony w 1976 roku. Był on używany w sondzie <a href="/wiki/Galileo_(sonda_kosmiczna)" title="Galileo (sonda kosmiczna)">Galileo</a> (wystrzelonej na Jowisza w 1989 roku, dotarła na miejsce w 1995 r.). Mikroprocesor RCA COSMAC był pierwszą <a href="/wiki/Implementacja_(informatyka)" title="Implementacja (informatyka)">implementacją</a> technologii C-MOS. Jego atutem był niski pobór mocy, a także zwiększona odporność na <a href="/wiki/Promieniowanie_kosmiczne" title="Promieniowanie kosmiczne">promieniowanie kosmiczne</a> i skutki <a href="/wiki/Wy%C5%82adowanie_elektrostatyczne" title="Wyładowanie elektrostatyczne">wyładowań elektrostatycznych</a> (dwie ostatnie cechy osiągnięto dzięki zastosowaniu technologii opartej na <a href="/wiki/Krzem" title="Krzem">krzemie</a> i <a href="/wiki/Szafir" title="Szafir">szafirze</a>).</p>
+<h3><span class="mw-headline" id="Mikroprocesory_16-bitowe"><a href="/wiki/Architektura_16-bitowa" title="Architektura 16-bitowa">Mikroprocesory 16-bitowe</a></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mikroprocesor&amp;action=edit&amp;section=8" title="Edytuj sekcję: Mikroprocesory 16-bitowe">edytuj</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Pierwszym 16-bitowym mikroprocesorem segmentowym (składającym się z kilku układów scalonych) był wyprodukowany przez National Semiconductor IMP-16 przedstawiony na początku 1973 roku. 8-bitowa wersja tego układu została przedstawiona w 1974 roku jako IMP-8. W tym samym roku National zaprezentował także pierwszy jednoukładowy 16-bitowy mikroprocesor, PACE, zastąpiony później wersją <a href="/wiki/MOSFET" title="MOSFET">NMOS</a> o nazwie INS8900.</p>
+<p>Kolejnymi wczesnymi konstrukcjami 16-bitowymi procesorów segmentowych są:</p>
+<ul>
+<li>mikroprocesor DEC (<a href="/wiki/Digital_Equipment_Corporation" title="Digital Equipment Corporation">Digital Equipment Corporation</a>) wbudowany w płytę główną komputera LSI-11 (<a href="/wiki/Original_Equipment_Manufacturer" title="Original Equipment Manufacturer">OEM</a>) oraz w komputerze <a href="/wiki/PDP-11" title="PDP-11">PDP-11</a>/03,</li>
+<li>procesor komputera MicroFlame 9440 firmy <a href="/wiki/Fairchild_Semiconductor" title="Fairchild Semiconductor">Fairchild Semiconductor</a>.</li>
+</ul>
+<p>Oba procesory zostały wyprodukowane w latach 1975–76 r.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Plik:TI-TMS9900JDL.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9b/TI-TMS9900JDL.jpg/220px-TI-TMS9900JDL.jpg" width="220" height="115" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9b/TI-TMS9900JDL.jpg/330px-TI-TMS9900JDL.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/9b/TI-TMS9900JDL.jpg/440px-TI-TMS9900JDL.jpg 2x" data-file-width="558" data-file-height="291" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:TI-TMS9900JDL.jpg" class="internal" title="Powiększ"></a></div>
+Mikroprocesor TMS 9900 z 1976 roku</div>
+</div>
+</div>
+<p>Pierwszym jednoukładowym 16-bitowym mikroprocesorem był TMS 9900 (TI), który był także kompatybilny z linią minikomputerów TI-990. TMS 9900 został użyty w minikomputerze TI-990/4, <a href="/wiki/Komputer_domowy" title="Komputer domowy">komputerze domowym</a> TI-99/4A, oraz linii OEM płyt mikrokomputerowych TM990. Układ został zamknięty w sporej ceramicznej 64-pinowej obudowie typu <a href="/wiki/Dual_in-line_package" title="Dual in-line package">DIP</a>, podczas gdy większość ówczesnych mikroprocesorów 8-bitowych mieściła się w tańszych i bardziej rozpowszechnionych plastikowych obudowach DIP 40-pin. Następca TMS9900, TMS 9980, został zaprojektowany jako konkurencja dla Intelowskiego 8080, zawierał pełny <a href="/wiki/Lista_rozkaz%C3%B3w_procesora" title="Lista rozkazów procesora">zestaw instrukcji</a> 16-bitowych, jednak posiadał jedynie 8-bitową <a href="/wiki/Szyna_danych" title="Szyna danych">szynę danych</a> i <a href="/wiki/Przestrze%C5%84_adresowa" title="Przestrzeń adresowa">przestrzeń adresową</a> ograniczoną do 16KB. Trzeci układ, TMS 9995, został zaprojektowany od nowa. Rodzina rozszerzyła się później o układy 99105 oraz 99110.</p>
+<p>Western Design Center (WDC) zaprezentowało oparty na technologii CMOS układ 65815, będący 16-bitowym ulepszeniem WDC CMOS 65C02 w roku 1984. 16-bitowy 65816 stał się sercem <a href="/wiki/Apple_IIGS" title="Apple IIGS">Apple IIgs</a> a później także Konsoli Super Nintendo (<a href="/wiki/Super_Nintendo_Entertainment_System" title="Super Nintendo Entertainment System">SNES</a>) stając się w ten sposób najbardziej popularnym układem 16-bitowym.</p>
+<p>Intel podążył inną ścieżką, nie próbował on naśladować minikomputerów. Zamiast tego rozszerzył swój 8080 do 16-bitowego 8086, pierwszego członka rodziny x86, która opanowała rynek nowoczesnych <a href="/wiki/Komputer_osobisty" title="Komputer osobisty">komputerów PC</a>. Intel wprowadził 8086 jako układ przedłużający życie programom napisanym na 8080. Z kolei układ 8088, używająca 8-bitowej szyny danych wersja procesora 8086, była pierwszym procesorem zastosowanym w wyprodukowanym przez <a href="/wiki/IBM_PC" title="IBM PC">IBM PC</a>, modelu <a href="/wiki/IBM_5150" title="IBM 5150">IBM 5150</a>. Następcy 8086 i 8088 to <a href="/wiki/Intel_80186" title="Intel 80186">Intel 80186</a>, <a href="/wiki/Intel_80286" title="Intel 80286">80286</a> oraz wypuszczony w <a href="/wiki/1985" title="1985">1985</a> roku 32-bitowy <a href="/wiki/Intel_80386" title="Intel 80386">80386</a>. Procesory te umocniły swoją dominację na rynku PC głównie dzięki kompatybilności wstecznej.</p>
+<p>Zintegrowana jednostka do zarządzania pamięcią mikroprocesora została wynaleziona przez Intela i opatentowana jako U.S. patent 4,442,484.</p>
+<h3><span class="mw-headline" id="Mikroprocesory_32-bitowe"><a href="/wiki/Architektura_32-bitowa" title="Architektura 32-bitowa">Mikroprocesory 32-bitowe</a></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mikroprocesor&amp;action=edit&amp;section=9" title="Edytuj sekcję: Mikroprocesory 32-bitowe">edytuj</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Następną generację stanowią mikroprocesory 32-bitowe, z których najbardziej popularne to <a href="/wiki/Intel_80386" title="Intel 80386">Intel 80386</a> i <a href="/wiki/MC68020" title="MC68020">Motorola 68020</a> / <a href="/wiki/MC68030" title="MC68030">Motorola 68030</a>. Zwiększeniu <a href="/wiki/Szyna_adresowa" title="Szyna adresowa">szyny adresowej</a> i <a href="/wiki/Szyna_danych" title="Szyna danych">szyny danych</a> do 32 bitów uległo także zwiększenie częstotliwości taktowania zegara. Układ 68020 pracujący przy 20 MHz osiągał szybkość 4 <a href="/wiki/Million_instructions_per_second" title="Million instructions per second">MIPSów</a>. Unowocześnieniem jego był <a href="/wiki/MC68030" title="MC68030">MC68030</a> zawierający 300 tys. tranzystorów i pracujący przy 30 MHz przez co osiągał moc obliczeniową 7 MIPS. Dla porównania układ 80386 zawierał 275 tys. tranzystorów i przy 20 MHz osiągał 5 MIPS-ów. W 1989 roku został wprowadzony przez firmę Intel mikroprocesor 80486 (1,2 mln tranzystorów, 25 MIPS przy 33 MHz) zastosowany do budowy nowej generacji komputerów PC 486. W 1990 Motorola wypuściła <a href="/wiki/MC68040" title="MC68040">MC68040</a>. W 1993 Intel wydaje mikroprocesor <a href="/wiki/Pentium" title="Pentium">Pentium</a> 60 MHz.</p>
+<h2><span class="mw-headline" id="Budowa_typowego_mikroprocesora">Budowa typowego mikroprocesora</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mikroprocesor&amp;action=edit&amp;section=10" title="Edytuj sekcję: Budowa typowego mikroprocesora">edytuj</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>W prawie każdym mikroprocesorze możemy wyróżnić następujące bloki</p>
+<ul>
+<li><a href="/wiki/Jednostka_arytmetyczno-logiczna" title="Jednostka arytmetyczno-logiczna">ALU</a> – <a href="/wiki/Jednostka_arytmetyczno-logiczna" title="Jednostka arytmetyczno-logiczna">jednostka arytmetyczno-logiczna</a> (Arithmetic Logic Unit), wykonuje ona operacje logiczne na dostarczonych jej danych, podstawowy zestaw to: dodawanie, podstawowe operacje logiczne (<a href="/wiki/Koniunkcja_(logika)" title="Koniunkcja (logika)">AND</a>, <a href="/wiki/Alternatywa_wykluczaj%C4%85ca" class="mw-redirect" title="Alternatywa wykluczająca">XOR</a>, <a href="/wiki/Alternatywa" title="Alternatywa">OR</a>, <a href="/wiki/Negacja" title="Negacja">NOT</a>), oraz <a href="/wiki/Przesuni%C4%99cie_bitowe" title="Przesunięcie bitowe">przesunięcia bitowe</a> w lewo i w prawo. W bardziej złożonych mikroprocesorach zestaw ten jest znacznie bogatszy.</li>
+<li>CU – <a href="/wiki/Uk%C5%82ad_regulacji_(automatyka)" title="Układ regulacji (automatyka)">układ sterowania</a> (Control Unit), zwany też dekoderem rozkazów. Odpowiedzialny jest on za dekodowanie dostarczonych mikroprocesorowi instrukcji i odpowiednie sterowanie pozostałymi jego blokami (na przykład jeśli zdekodowaną instrukcją będzie dodawanie, CU odpowiednio ustawi sygnały sterujące, by ALU wykonała tę właśnie operację)</li>
+<li><a href="/wiki/Rejestr_procesora" title="Rejestr procesora">Rejestry</a> – umieszczone wewnątrz mikroprocesora komórki pamięci o niewielkich rozmiarach (najczęściej 4/8/16/32/64/128 bitów) służące do przechowywania tymczasowych wyników obliczeń (rejestry danych) oraz adresów lokacji w pamięci operacyjnej (rejestry adresowe). Proste mikroprocesory mają tylko jeden rejestr danych zwany <a href="/wiki/Akumulator_(informatyka)" title="Akumulator (informatyka)">akumulatorem</a>. Oprócz rejestrów danych i rejestrów adresowych występuje też pewna liczba rejestrów o specjalnym przeznaczeniu:
+<ul>
+<li>PC – <a href="/wiki/Licznik_programu" title="Licznik programu">licznik rozkazów</a> (Program Counter) – zawiera on adres komórki pamięci zawierającej następny rozkaz do wykonania</li>
+<li>IR – <a href="/wiki/Rejestr_instrukcji" title="Rejestr instrukcji">rejestr instrukcji</a> (Instruction Register) – zawiera on kod aktualnie wykonywanej przez procesor instrukcji.</li>
+<li>SP – <a href="/wiki/Wska%C5%BAnik_stosu" title="Wskaźnik stosu">wskaźnik stosu</a> (Stack Pointer) – zawiera adres wierzchołka stosu</li>
+</ul>
+</li>
+</ul>
+<p>Mikroprocesor komunikuje się z otoczeniem za pomocą <a href="/wiki/Szyna_danych" title="Szyna danych">szyny danych</a> i <a href="/wiki/Szyna_adresowa" title="Szyna adresowa">szyny adresowej</a>.</p>
+<p>Generalnie każdy bardziej skomplikowany mikroprocesor można zaklasyfikować do jednej z trzech architektur:</p>
+<ul>
+<li><a href="/wiki/CISC" title="CISC">CISC</a> (Complex Instruction Set Computers)</li>
+<li><a href="/wiki/RISC" title="RISC">RISC</a> (Reduced Instruction Set Computers)</li>
+<li><a href="/wiki/VLIW" title="VLIW">VLIW</a> (Very Long Instruction Word)</li>
+</ul>
+<p>Każda z nich ma swoją specyfikę, swoje wady i zalety.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/Plik:CEMI_MCY_7880.jpeg" class="image"><img alt="CEMI MCY 7880.jpeg" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/CEMI_MCY_7880.jpeg/300px-CEMI_MCY_7880.jpeg" width="300" height="103" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/CEMI_MCY_7880.jpeg/450px-CEMI_MCY_7880.jpeg 1.5x, //upload.wikimedia.org/wikipedia/commons/e/e8/CEMI_MCY_7880.jpeg 2x" data-file-width="488" data-file-height="167" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:CEMI_MCY_7880.jpeg" class="internal" title="Powiększ"></a></div>
+</div>
+</div>
+</div>
+<h2><span class="mw-headline" id="Polska">Polska</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mikroprocesor&amp;action=edit&amp;section=11" title="Edytuj sekcję: Polska">edytuj</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>W Polsce pod koniec <a href="/wiki/Lata_70._XX_wieku" title="Lata 70. XX wieku">lat 70.</a> zakłady <a href="/wiki/CEMI" title="CEMI">CEMI</a> rozpoczęły produkcję mikroprocesora <a href="/wiki/MCY7880" title="MCY7880">MCY7880</a> (początkowa nazwa UCY7880) będącego klonem <a href="/wiki/Intel_8080" title="Intel 8080">8080A</a>.</p>
+<p>Obecnie w Polsce produkcją specjalizowanych układów scalonych zajmuje się kilka przedsiębiorstw. Firma <a href="/w/index.php?title=Digital_Core_Design&amp;action=edit&amp;redlink=1" class="new" title="Digital Core Design (strona nie istnieje)">DCD</a> odniosła sukces przedstawiając w 2011 roku najszybszy na świecie w swojej klasie mikrokontroler<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> a w 2015 roku zaprezentowała 32-bitowy procesor D32PRO konkurencyjny dla procesorów typu ARM w urządzeniach mobilnych. <a href="/w/index.php?title=D32PRO&amp;action=edit&amp;redlink=1" class="new" title="D32PRO (strona nie istnieje)">D32PRO</a> również był szybszy w testach z zaprezentowanym procesorem ARM <sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup>. Innym polskim projektem jest mikroprocesor <a href="/w/index.php?title=Warszawa_(mikroprocesor)&amp;action=edit&amp;redlink=1" class="new" title="Warszawa (mikroprocesor) (strona nie istnieje)">Warszawa</a> <sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup>.</p>
+<p>W Listopadzie 2016 w mediach pojawiła się informacja o powołaniu konsorcjum POL-PUS mające produkować mikrochipy do użytku w nowych dowodach osobistych <sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup>.</p>
+<h2><span class="mw-headline" id="Kalendarium">Kalendarium</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mikroprocesor&amp;action=edit&amp;section=12" title="Edytuj sekcję: Kalendarium">edytuj</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>1971</p>
+<ul>
+<li><a href="/wiki/Marcian_Hoff" title="Marcian Hoff">Ted Hoff</a>, Stan Mazor i <a href="/wiki/Federico_Faggin" title="Federico Faggin">Federico Faggin</a> opracowują pierwszy mikroprocesor 4-bitowy <a href="/wiki/Intel_4004" title="Intel 4004">Intel 4004</a> (108 kHz). Zajmował powierzchnię 12 mm². Wykonywał 60 tys. operacji na sekundę. Składał się z 2300 tranzystorów. Kosztował 200 USD.</li>
+</ul>
+<p>1972</p>
+<ul>
+<li>24 sierpnia Intel wypuszcza mikroprocesor <a href="/wiki/Intel_8008" title="Intel 8008">Intel 8008</a>. Jest to 8-bitowy układ o częstotliwości zegara 200 kHz. Może wykonać 300 tys. instrukcji na sekundę i zaadresować 16 KB pamięci. Zawierał ok. 3500 tranzystorów.</li>
+</ul>
+<p>1974</p>
+<ul>
+<li>1 kwietnia Intel przedstawia 8-bitowy mikroprocesor <a href="/wiki/Intel_8080" title="Intel 8080">Intel 8080</a> (2 MHz), ulepszoną wersję modelu 8008. Składający się z 6 tys. tranzystorów. 8080 adresował 64 KB pamięci, 75 rozkazów. Jego cena to 360 dolarów. 8080 jest 5 razy szybszy od swojego poprzednika.</li>
+</ul>
+<p>1975</p>
+<ul>
+<li>Motorola wypuszcza na rynek procesor <a href="/wiki/Motorola_6800" title="Motorola 6800">Motorola 6800</a>,</li>
+<li>Firma MOS Technologies wprowadza na rynek mikroprocesor <a href="/wiki/MOS_Technology_6502" title="MOS Technology 6502">6502</a></li>
+</ul>
+<p>1976</p>
+<ul>
+<li>W marcu Intel przedstawia procesor <a href="/wiki/Intel_8085" title="Intel 8085">Intel 8085</a> (5 MHz), w którym znajduje się 6,5 tys. tranzystorów.</li>
+<li>W lipcu <a href="/wiki/ZiLOG" title="ZiLOG">Zilog</a> wypuszcza 8-bitowy procesor <a href="/wiki/Zilog_Z80" title="Zilog Z80">Z80</a> (2,5 MHz, 176 rozkazów).</li>
+</ul>
+<p>1978</p>
+<ul>
+<li>W czerwcu Intel wypuszcza na rynek pierwsze mikroprocesory 16-bitowe – <a href="/wiki/Intel_8086" title="Intel 8086">Intel 8086</a> (o częstotliwości zegara 4,77 MHz, składający się z 29 tys. tranzystorów w technologii 3 <a href="/wiki/Mikrometr" title="Mikrometr">mikronów</a>, który potrafi zaadresować 1 MB pamięci) i <a href="/wiki/Intel_8088" title="Intel 8088">Intel 8088</a> (zewnętrznie okrojony do 8 bitów).</li>
+</ul>
+<p>1979</p>
+<ul>
+<li>We wrześniu <a href="/wiki/Motorola" title="Motorola">Motorola</a> wprowadza 32-bitowy mikroprocesor <a href="/wiki/MC68000" title="MC68000">MC68000</a>, jeden z najbardziej wydajnych układów 32-bitowych, składający się z 68 tys. tranzystorów (stąd jego nazwa).</li>
+</ul>
+<p>1980</p>
+<ul>
+<li>8-bitowy procesor <a href="/wiki/Intel_8051" title="Intel 8051">Intel 8051</a></li>
+</ul>
+<p>1981</p>
+<ul>
+<li>Intel prezentuje 32-bitowy <a href="/wiki/Intel_iAPX_432" title="Intel iAPX 432">iAPX 432</a></li>
+</ul>
+<p>1982</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Plik:KL_Intel_80286_CLCC_Top.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/46/KL_Intel_80286_CLCC_Top.jpg/220px-KL_Intel_80286_CLCC_Top.jpg" width="220" height="226" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/46/KL_Intel_80286_CLCC_Top.jpg/330px-KL_Intel_80286_CLCC_Top.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/46/KL_Intel_80286_CLCC_Top.jpg/440px-KL_Intel_80286_CLCC_Top.jpg 2x" data-file-width="732" data-file-height="753" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:KL_Intel_80286_CLCC_Top.jpg" class="internal" title="Powiększ"></a></div>
+<a href="/wiki/Intel_80286" title="Intel 80286">Intel 80286</a> z 1982</div>
+</div>
+</div>
+<ul>
+<li>W lutym Intel prezentuje 16-bitowy mikroprocesor <a href="/wiki/Intel_80286" title="Intel 80286">Intel 80286</a>, taktowany zegarem 6 MHz. Zawierający 134 tys. tranzystorów. Używa on 16-bitową <a href="/wiki/Szyna_danych" title="Szyna danych">szynę danych</a>. Dzięki <a href="/wiki/Tryb_chroniony" title="Tryb chroniony">trybowi chronionemu</a> możliwe jest użycie do 16 MB pamięci. Procesor wspiera <a href="/wiki/Wielozadaniowo%C5%9B%C4%87" title="Wielozadaniowość">wielozadaniowość</a>.</li>
+</ul>
+<p>1984</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Plik:Intel_i486_DX_25MHz_SX328.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/17/Intel_i486_DX_25MHz_SX328.jpg/220px-Intel_i486_DX_25MHz_SX328.jpg" width="220" height="220" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/17/Intel_i486_DX_25MHz_SX328.jpg/330px-Intel_i486_DX_25MHz_SX328.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/17/Intel_i486_DX_25MHz_SX328.jpg/440px-Intel_i486_DX_25MHz_SX328.jpg 2x" data-file-width="1100" data-file-height="1100" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:Intel_i486_DX_25MHz_SX328.jpg" class="internal" title="Powiększ"></a></div>
+Procesor <a href="/wiki/Intel_80486" title="Intel 80486">Intel i486</a> DX 25 MHz SX328 z kwietnia 1991 roku z USA</div>
+</div>
+</div>
+<ul>
+<li>Motorola wypuszcza prawdziwie 32-bitowy <a href="/wiki/MC68020" title="MC68020">MC68020</a> z <a href="/wiki/Potokowo%C5%9B%C4%87" title="Potokowość">przetwarzaniem potokowym</a>.</li>
+</ul>
+<p>1985</p>
+<ul>
+<li>W październiku Intel przedstawia 32-bitowy procesor <a href="/wiki/Intel_80386" title="Intel 80386">80386</a>, 16 MHz; zbudowany jest z ok. 275.000 tranzystorów w technologii 1 mikrona.</li>
+</ul>
+<p>1987</p>
+<ul>
+<li><a href="/wiki/Motorola" title="Motorola">Motorola</a> prezentuje <a href="/wiki/MC68030" title="MC68030">MC68030</a>, który składa się z około 273 tys. tranzystorów</li>
+</ul>
+<p>1988</p>
+<ul>
+<li><a href="/wiki/Advanced_Micro_Devices" title="Advanced Micro Devices">AMD</a> prezentuje 32-bitowy <a href="/wiki/AMD_29000" title="AMD 29000">Am29000</a></li>
+</ul>
+<p>1989</p>
+<ul>
+<li>W kwietniu powstaje procesor <a href="/wiki/Intel_80486" title="Intel 80486">Intel 80486</a>, który zawiera 1,2 mln tranzystorów.</li>
+</ul>
+<p>1990</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Plik:KL_Motorola_XC68040.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a2/KL_Motorola_XC68040.jpg/220px-KL_Motorola_XC68040.jpg" width="220" height="220" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a2/KL_Motorola_XC68040.jpg/330px-KL_Motorola_XC68040.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a2/KL_Motorola_XC68040.jpg/440px-KL_Motorola_XC68040.jpg 2x" data-file-width="1437" data-file-height="1437" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:KL_Motorola_XC68040.jpg" class="internal" title="Powiększ"></a></div>
+<a href="/wiki/MC68040" title="MC68040">MC68040</a></div>
+</div>
+</div>
+<ul>
+<li>Zmiana nazwy Intela <a href="/wiki/Intel_80486" title="Intel 80486">80486</a> na <a href="/wiki/Intel_80486" title="Intel 80486">i486</a>, ponieważ okazuje się, że liczba nie może być zarejestrowanym znakiem handlowym.</li>
+<li>Motorola przedstawia 32-bitowy układ <a href="/wiki/MC68040" title="MC68040">MC68040</a>, taktowany zegarem 25 MHz. Mikroprocesor jest zbudowany z ok. 1,2 miliona tranzystorów, zawiera jednostkę zmiennoprzecinkową oraz dodatkową <a href="/wiki/Pami%C4%99%C4%87_podr%C4%99czna" title="Pamięć podręczna">pamięć cache</a> do przechowywania instrukcji programu i danych.</li>
+</ul>
+<p>1993</p>
+<ul>
+<li>W marcu powstaje procesor <a href="/wiki/Pentium" title="Pentium">Intel Pentium</a>, wyprodukowany w technologii 0,8 <a href="/wiki/Mikrometr" title="Mikrometr">mikrona</a>. Taktowany jest zegarem 60 MHz lub 66 MHz. Zawiera ok. 3,2 miliona tranzystorów. W roku 1994 odkryty zostanie błąd w budowie procesora, powodujący nieprawidłowe wykonywanie obliczeń.</li>
+</ul>
+<p>1994</p>
+<ul>
+<li>Pentium 100 MHz</li>
+</ul>
+<p>1995</p>
+<ul>
+<li>W listopadzie Intel wypuszcza procesory <a href="/wiki/Pentium_Pro" title="Pentium Pro">Pentium Pro</a>, taktowane zegarami 150 MHz, 180 MHz i 200 MHz. Układy zbudowane są z 5,5 miliona tranzystorów oraz Pentium taktowane zegarem 133 MHz. Odpowiedzią firmy AMD na procesor Pentium był procesor <a href="/wiki/AMD_K5" title="AMD K5">AMD K5</a> taktowany zegarem z częstotliwością od 75 do 116 MHz. Procesor ten, tak jak Intelowski Pentium, posiadał 32 kB <a href="/wiki/Pami%C4%99%C4%87_podr%C4%99czna" title="Pamięć podręczna">pamięci podręcznej</a> pierwszego poziomu i tak jak konkurent, był tworzony w technologii 0,35 mikrometra.</li>
+</ul>
+<p>1996</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Plik:KL_Intel_Pentium_MMX_200.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/50/KL_Intel_Pentium_MMX_200.jpg/220px-KL_Intel_Pentium_MMX_200.jpg" width="220" height="204" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/50/KL_Intel_Pentium_MMX_200.jpg/330px-KL_Intel_Pentium_MMX_200.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/50/KL_Intel_Pentium_MMX_200.jpg/440px-KL_Intel_Pentium_MMX_200.jpg 2x" data-file-width="1560" data-file-height="1449" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:KL_Intel_Pentium_MMX_200.jpg" class="internal" title="Powiększ"></a></div>
+Intel <a href="/wiki/Pentium_MMX" title="Pentium MMX">Pentium MMX</a> 200 MHz w obudowie <a href="/wiki/CPGA" title="CPGA">CPGA</a></div>
+</div>
+</div>
+<ul>
+<li>Powstaje Intel <a href="/wiki/Pentium_Pro" title="Pentium Pro">Pentium Pro</a> 200 MHz oraz pierwsze <a href="/wiki/Pentium_MMX" title="Pentium MMX">Pentium MMX</a>, powstają pierwsze konkurencyjne dla Pentium procesory CYRIX MII oraz <a href="/wiki/AMD_K6" title="AMD K6">AMD K6</a>.</li>
+</ul>
+<p>1997</p>
+<ul>
+<li>Intel <a href="/wiki/Pentium_II" title="Pentium II">Pentium II</a> (<a href="/wiki/Pentium_II" title="Pentium II">Klamath</a>, ok. 7,5 mln tranzystorów), do 300 MHz, niskonapięciowy</li>
+<li>procesor PII Tillamook 0,28;</li>
+<li><a href="/wiki/DEC_Alpha" title="DEC Alpha">DEC Alpha</a> 21164 z częstością 600 MHz;</li>
+<li>Motorola <a href="/wiki/PowerPC_G3" title="PowerPC G3">PowerPC G3</a>;</li>
+</ul>
+<p>1998</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Plik:KL_Cyrix_MII-333.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/KL_Cyrix_MII-333.jpg/220px-KL_Cyrix_MII-333.jpg" width="220" height="219" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/KL_Cyrix_MII-333.jpg/330px-KL_Cyrix_MII-333.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4a/KL_Cyrix_MII-333.jpg/440px-KL_Cyrix_MII-333.jpg 2x" data-file-width="1500" data-file-height="1494" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:KL_Cyrix_MII-333.jpg" class="internal" title="Powiększ"></a></div>
+Cyrix MII 333 MHz</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Plik:SL3A2down.JPG" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/61/SL3A2down.JPG/220px-SL3A2down.JPG" width="220" height="165" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/61/SL3A2down.JPG/330px-SL3A2down.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/61/SL3A2down.JPG/440px-SL3A2down.JPG 2x" data-file-width="3264" data-file-height="2448" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:SL3A2down.JPG" class="internal" title="Powiększ"></a></div>
+Celeron 400 MHz w obudowie <a href="/wiki/Socket_370" title="Socket 370">Socket 370</a></div>
+</div>
+</div>
+<ul>
+<li>Powstaje tania alternatywa Pentium II <a href="/wiki/Celeron" title="Celeron">Celeron</a> oraz konkurencyjne <a href="/wiki/AMD_K6-2" title="AMD K6-2">AMD K6-2</a>, a także <a href="/wiki/AMD_K6-III" title="AMD K6-III">AMD K6-III</a> <a href="/wiki/3DNow!" title="3DNow!">3DNow!</a></li>
+<li>Intel Pentium II 450/100 MHz; Deschutes 450 MHz</li>
+<li>Celeron 300A i 333 (znane jako <a href="/wiki/Celeron" title="Celeron">Mendocino</a>)- Pentium II z mniejszą pamięcią <a href="/wiki/Pami%C4%99%C4%87_podr%C4%99czna_procesora" title="Pamięć podręczna procesora">L2</a>, starsze całkiem bez pamięci L2</li>
+<li>Pentium II innych firm: AMD K6-2 333 MHz i AMD K6-2 3D ze wspomaganiem grafiki 3D,</li>
+<li>Cyrix MII 300 MHz</li>
+<li><a href="/wiki/Xeon" title="Xeon">Intel Xeon</a> – PII/450 MHz + pamięć L2 0,5-2 MB, dostęp z pełną częstością.</li>
+<li><a href="/wiki/Pentium_OverDrive" title="Pentium OverDrive">Pentium OverDrive</a> dla PPro – dodaje MMX, zegar 166 → 333 MHz</li>
+<li>UltraSparc III 600 MHz, skalowalne systemy, pamięć L2 do 8 MB</li>
+<li>JavaChip (Sun), Java 701, 200 MHz</li>
+</ul>
+<p>1999</p>
+<ul>
+<li>Intel wprowadza procesor <a href="/wiki/Pentium_III" title="Pentium III">Katmai</a>, czyli <a href="/wiki/Pentium_III" title="Pentium III">Pentium III</a> z <a href="/wiki/Streaming_SIMD_Extensions" title="Streaming SIMD Extensions">SSE</a> (Streaming Single Instruction Multiple Data), 70 rozkazów wspomagających multimedia, 500-800 MHz. Każdy układ zawiera unikatowy numer identyfikacyjny, który można sprawdzić za pośrednictwem <a href="/wiki/Internet" title="Internet">Internetu</a>. Wzbudza to wiele kontrowersji i powszechnie uważane jest za poważny cios w prywatność nabywców.</li>
+<li>AMD w odpowiedzi na Pentium III wydaje układ <a href="/wiki/AMD_Athlon" title="AMD Athlon">Athlon</a>, który w większości testów wypada lepiej niż jego konkurent. Dzięki temu następuje znaczny spadek cen procesorów.</li>
+<li>Pentium III Xeon, do 600 MHz, do 2 MB pamięci L2, drogie procesory do serwerów.</li>
+<li>Intel Coppermine, Cascades 600-800 MHz, technologia 0,18 μm</li>
+<li>AMD Athlon, 650 MHz, szybszy od Intela! Technologia 3D now, rozszerzająca możliwości zastosowań multimedialnych i grafiki 3D.</li>
+<li>Intel Itanium (poprzednio Merced), nowa architektura <a href="/wiki/IA-64" title="IA-64">IA-64</a> Intela + HP, 1 GHz (ale tylko eksperymentalnie)</li>
+</ul>
+<p>2000</p>
+<ul>
+<li>W lutym AMD przedstawia nowy procesor Athlon taktowany zegarem 1,1 GHz. W odpowiedzi na to Intel jeszcze w tym samym miesiącu prezentuje układ 1,5 GHz.</li>
+<li>Intel Itanium IA-64, od 733 MHz, magistrala 133 MHz, L1-L3;</li>
+<li>Intel <a href="/wiki/Pentium_4" title="Pentium 4">Pentium 4</a> (Williamette), architektura <a href="/wiki/NetBurst" title="NetBurst">NetBurst</a>, od 1,3 MHz/400 MHz</li>
+<li>AMD Athlon 1,1 GHz i Intel PIII 1,13 GHz</li>
+<li>AMD Mustang, od 1,2 MHz/266 MHz.</li>
+<li>IBM Power 4, Sun – Sparc 64V.</li>
+<li>Alpha 21264 – druga generacja procesorów Alpha, do 1 GHz/333 MHz;</li>
+<li>Rosyjski mikroprocesor E2K Elbrus, 2-5 szybszy od P4</li>
+<li>Notebooki: oszczędny Crusoe firmy <a href="/wiki/Transmeta_Corporation" title="Transmeta Corporation">Transmeta</a>, od 1 GHz/266 MHz;</li>
+<li>Procesory P III z technologią <a href="/wiki/SpeedStep" title="SpeedStep">SpeedStep</a>;</li>
+<li>AMD Corvette, od 900 MHz/266 MHz.</li>
+</ul>
+<p>2001</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Plik:KL_SUN_UltraSparc_3.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/7e/KL_SUN_UltraSparc_3.jpg/220px-KL_SUN_UltraSparc_3.jpg" width="220" height="220" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/7e/KL_SUN_UltraSparc_3.jpg/330px-KL_SUN_UltraSparc_3.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/7e/KL_SUN_UltraSparc_3.jpg/440px-KL_SUN_UltraSparc_3.jpg 2x" data-file-width="1365" data-file-height="1368" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:KL_SUN_UltraSparc_3.jpg" class="internal" title="Powiększ"></a></div>
+SUN UltraSparc III</div>
+</div>
+</div>
+<ul>
+<li>Serwery: Intel Itanium IA-64, od 733 MHz, magistrala 133 MHz, L1-L3;</li>
+<li>Intel Gallatin, od 1,8 MHz/400 MHz, L2 4 MB.</li>
+<li>Pentium 4 Xeon, od 1,3 GHz/400 MHz, L1-L3</li>
+<li>Itanium-McKinley w serwerach, od 1,5 GHz/400 MHz, rozwój 64-bitowej architektury IA-64.</li>
+<li>IBM Power 4, 64 bit <a href="/wiki/RISC" title="RISC">RISC</a>, dual-core, 170 mln tranzystorów!</li>
+<li>UltraSPARC III</li>
+<li>PC: Intel P4, 2,0 GHz/266 MHz;</li>
+<li>Intel Northwood, pokazano układ 3,5 GHz/400 MHz;</li>
+<li>Intel pokazał eksperymentalny <a href="/wiki/Uk%C5%82ad_scalony" title="Układ scalony">chip</a> na 10 GHz.</li>
+</ul>
+<p>2002</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Plik:KL_Intel_Pentium_4_Northwood.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/14/KL_Intel_Pentium_4_Northwood.jpg/220px-KL_Intel_Pentium_4_Northwood.jpg" width="220" height="219" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/14/KL_Intel_Pentium_4_Northwood.jpg/330px-KL_Intel_Pentium_4_Northwood.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/14/KL_Intel_Pentium_4_Northwood.jpg/440px-KL_Intel_Pentium_4_Northwood.jpg 2x" data-file-width="1125" data-file-height="1122" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:KL_Intel_Pentium_4_Northwood.jpg" class="internal" title="Powiększ"></a></div>
+Intel Pentium 4 3,0 GHz (Northwood)</div>
+</div>
+</div>
+<ul>
+<li>7 stycznia – AMD wprowadza nowy procesor <a href="/wiki/AMD_Athlon" title="AMD Athlon">AMD Athlon XP</a> 2000+</li>
+<li>Procesor <a href="/wiki/Pentium_4" title="Pentium 4">Intel Pentium® 4</a>,</li>
+<li>Serwery: Intel Madison IA-64, od 2,5 GHz/400 MHz, L2 do 4 MB, L3 do 16 MB;</li>
+<li>PC: Intel Deerfield IA-64, 2,8 GHz/400 MHz; L2 do 2 MB, L3 do 8 MB.</li>
+<li>Intel pokazał (chłodzone cieczą) procesory o częstościach 4,5 GHz.</li>
+<li><a href="/wiki/Pentium_4" title="Pentium 4">Pentium 4</a> powyżej 3 GHz i 800 MHz FSB Technologia 0,09 mikrona</li>
+<li>Technologia 90 nanometrów eksperymentalnie, <a href="/wiki/Laptop" title="Laptop">notebooki</a> z P4 powyżej 2 GHz.</li>
+</ul>
+<p>2003</p>
+<ul>
+<li>Pentium <a href="/wiki/Centrino" title="Centrino">Centrino</a> do <a href="/wiki/Laptop" title="Laptop">notebooków</a>, szybkie procesory oszczędzające energię, z bezprzewodową łącznością w standardzie <a href="/wiki/Wi-Fi" title="Wi-Fi">Wi-Fi</a> (811b);</li>
+</ul>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Plik:Itanium2.JPG" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Itanium2.JPG/220px-Itanium2.JPG" width="220" height="175" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/b/b8/Itanium2.JPG 1.5x" data-file-width="300" data-file-height="238" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:Itanium2.JPG" class="internal" title="Powiększ"></a></div>
+<a href="/wiki/Itanium_2" title="Itanium 2">Itanium 2</a></div>
+</div>
+</div>
+<ul>
+<li>64-bitowe procesory <a href="/wiki/Opteron" title="Opteron">AMD Opteron</a>, oraz <a href="/wiki/Itanium_2" title="Itanium 2">Itanium 2</a> Intela do serwerów, oraz <a href="/wiki/Athlon_64" title="Athlon 64">AMD Athlon 64</a> FX i Intel <a href="/wiki/Pentium_4_Extreme_Edition" title="Pentium 4 Extreme Edition">Pentium 4 Extreme Edition</a> do PC.</li>
+<li>Technologia 90 <a href="/wiki/Nanometr" title="Nanometr">nanometrów</a> w procesorach <a href="/wiki/Komputer_stacjonarny" title="Komputer stacjonarny">komputerów stacjonarnych</a>.</li>
+</ul>
+<p>2004</p>
+<ul>
+<li>Pentium 4 Grantsdale; P4 Extreme Edition 2,8-3,6 GHz; wersja 4 GHz 10/2004.</li>
+<li>Technologia 90 nanometrów w procesorach <a href="/wiki/Komputer_przeno%C5%9Bny" class="mw-redirect" title="Komputer przenośny">komputerów przenośnych</a>.</li>
+</ul>
+<p>2006</p>
+<ul>
+<li>Technologia 65 nm w procesorach <a href="/wiki/Intel_Core_2" title="Intel Core 2">Intel Core 2</a>;</li>
+<li><a href="/wiki/Procesor_graficzny" title="Procesor graficzny">Procesory graficzne</a> (ok. 500 mln tranzystorów);</li>
+</ul>
+<p>2007</p>
+<ul>
+<li>Technologia 45 nm firmy Intel; procesory Wolfdale, Yorkfield, Yorkfield XE i <a href="/wiki/Penryn_(procesor)" title="Penryn (procesor)">Penryn</a> z serii <a href="/wiki/Intel_Core_2" title="Intel Core 2">Core 2</a>. Procesory dwurdzeniowe.</li>
+</ul>
+<p>2008</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Plik:Intel_core_i7-975_top_R7309725_wp.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Intel_core_i7-975_top_R7309725_wp.jpg/220px-Intel_core_i7-975_top_R7309725_wp.jpg" width="220" height="227" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Intel_core_i7-975_top_R7309725_wp.jpg/330px-Intel_core_i7-975_top_R7309725_wp.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Intel_core_i7-975_top_R7309725_wp.jpg/440px-Intel_core_i7-975_top_R7309725_wp.jpg 2x" data-file-width="1582" data-file-height="1632" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Plik:Intel_core_i7-975_top_R7309725_wp.jpg" class="internal" title="Powiększ"></a></div>
+<a href="/wiki/Intel_Core_i7" title="Intel Core i7">Core i7</a> w obudowie <a href="/wiki/LGA_1366" title="LGA 1366">LGA 1366</a></div>
+</div>
+</div>
+<ul>
+<li>Procesory czterordzeniowe, np. Core 2 Extreme QX9770 – 3,2 GHz (2x6 MB L2, 1600 MHz <a href="/wiki/Front_side_bus" title="Front side bus">FSB</a>), Core 2 Quad Q9550.</li>
+<li><a href="/wiki/Intel_Core_i7" title="Intel Core i7">Core i7</a>, Bloomfield, <a href="/wiki/Nehalem" title="Nehalem">Nehalem</a> – technologia 45 nm, 256 KB L2 cache, 8 MB L3 cache, 780 milionów tranzystorów.</li>
+<li>AMD Phenom II w technologii 45 nm</li>
+</ul>
+<p>2010</p>
+<ul>
+<li>Technologia 32 nm; &gt; 2 mld tranzystorów w mikroprocesorze;</li>
+</ul>
+<p>Intel pokazał <a href="/wiki/Procesor_grafenowy" title="Procesor grafenowy">tranzystory grafenowe</a> o szybkości 100 GHz, które mogą osiągnąć nawet 1000 GHz, technologia w praktyce po 2014 roku.</p>
+<h2><span id="Rozw.C3.B3j_mikroprocesor.C3.B3w"></span><span class="mw-headline" id="Rozwój_mikroprocesorów">Rozwój mikroprocesorów</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mikroprocesor&amp;action=edit&amp;section=13" title="Edytuj sekcję: Rozwój mikroprocesorów">edytuj</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>1971 4-bit <a href="/wiki/Intel_4004" title="Intel 4004">Intel 4004</a> zawierał około 2300 tranzystorów, zaprojektowany i wykonany w technologii 10-<a href="/wiki/Mikrometr" title="Mikrometr">mikronowej</a></li>
+<li>1972 8-bit <a href="/wiki/Intel_8008" title="Intel 8008">Intel 8008</a> zawierał około 3500 tranzystorów, taktowanych częstotliwością 200 kHz i mógł wykonywać do 60000 instrukcji na sekundę, zaprojektowany i wykonany w technologii 10-<a href="/wiki/Mikrometr" title="Mikrometr">mikronowej</a></li>
+<li>1974 8-bit <a href="/wiki/Intel_8080" title="Intel 8080">Intel 8080</a> zegar 2 MHz, 6 tys. tranzystorów</li>
+<li>1976 16-bit TMS 9900</li>
+</ul>
+<dl>
+<dd>8-bit <a href="/wiki/Zilog_Z80" title="Zilog Z80">Zilog Z80</a></dd>
+</dl>
+<ul>
+<li>1978 16-bit <a href="/wiki/Intel_8086" title="Intel 8086">Intel 8086</a> zegar 4,77 MHz, zbudowany z 29 tys. tranzystorów w technologii 3 <a href="/wiki/Mikrometr" title="Mikrometr">mikronów</a></li>
+<li>1979 32-bit <a href="/wiki/MC68000" title="MC68000">Motorola 68000</a> 68 tys. tranzystorów</li>
+<li>1980 Motorola wprowadza nowy 32-bitowy procesor <a href="/wiki/MC68020" title="MC68020">MC68020</a> zawierający 200,000 tranzystorów</li>
+<li>1982 16-bit <a href="/wiki/Intel_80286" title="Intel 80286">Intel 80286</a> 134 tys. 6 MHz</li>
+<li>1985 <a href="/wiki/Intel_80386" title="Intel 80386">Intel 80386</a> zegar 16 MHz, zbudowany z 275 tys. tranzystorów w technologii 1 <a href="/wiki/Mikrometr" title="Mikrometr">mikrona</a></li>
+<li>1987 32-bit <a href="/wiki/MC68030" title="MC68030">MC68030</a> zawierający 300 tys. tranzystorów i pracujący przy 30 MHz osiągał moc obliczeniową 7 <a href="/wiki/Million_instructions_per_second" title="Million instructions per second">MIPS</a></li>
+<li>1989 32-bit <a href="/wiki/Intel_80486" title="Intel 80486">Intel 80486</a> 1.180.235 tranzystorów w technologii 1 <a href="/wiki/Mikrometr" title="Mikrometr">mikrona</a>, prędkość 25 MHz - 20 <a href="/wiki/Million_instructions_per_second" title="Million instructions per second">MIPS</a></li>
+<li>1990 32-bit <a href="/wiki/MC68040" title="MC68040">MC68040</a> 40 MHz 1.170.000 tranzystorów 29 <a href="/wiki/Million_instructions_per_second" title="Million instructions per second">MIPS</a></li>
+<li>1992 64-bit <a href="/wiki/DEC_Alpha" title="DEC Alpha">DEC Alpha</a></li>
+<li>1993 <a href="/wiki/Pentium" title="Pentium">Pentium</a> 3,3 mln wyprodukowany w technologii 0,8 <a href="/wiki/Mikrometr" title="Mikrometr">mikrona</a>, taktowany zegarem 60 MHz</li>
+<li>1995 <a href="/wiki/Pentium_Pro" title="Pentium Pro">Pentium Pro</a> 5,5 mln, 150 MHz, technologia 0,6 <a href="/wiki/Mikrometr" title="Mikrometr">mikrona</a> (600 nm)</li>
+<li>1997 <a href="/wiki/Pentium_II" title="Pentium II">Pentium II</a> 7,5 mln z <a href="/wiki/MMX_(zestaw_instrukcji)" title="MMX (zestaw instrukcji)">MMX</a> 300 MHz</li>
+<li>1999 <a href="/wiki/Pentium_III" title="Pentium III">Pentium III</a> 9,5 mln z <a href="/wiki/SIMD" title="SIMD">SIMD</a> 500 MHz</li>
+<li>2000 <a href="/wiki/Pentium_4" title="Pentium 4">Pentium 4</a> 42 mln z <a href="/wiki/SSE2" title="SSE2">SSE2</a> 1,4 GHz wykonany w technologii 0,18 <a href="/wiki/Mikrometr" title="Mikrometr">mikrona</a></li>
+<li>2002 Pentium 4 (Northwood) 2,4 GHz, 55 mln, utworzony w oparciu o technologię 0,13 <a href="/wiki/Mikrometr" title="Mikrometr">mikrona</a></li>
+<li>2004 Pentium 4 (Prescott) 3,4 GHz, 125 mln, technologia 90 nm</li>
+<li>2004 <a href="/wiki/Pentium_D" title="Pentium D">Pentium D</a> 230 mln tranzystorów</li>
+<li>2008 <a href="/wiki/Intel_Core_i7" title="Intel Core i7">Core i7</a> technologia 45 nm, 780 milionów tranzystorów.</li>
+</ul>
+<h2><span id="Kierunki_rozwoju_mikroprocesor.C3.B3w"></span><span class="mw-headline" id="Kierunki_rozwoju_mikroprocesorów">Kierunki rozwoju mikroprocesorów</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mikroprocesor&amp;action=edit&amp;section=14" title="Edytuj sekcję: Kierunki rozwoju mikroprocesorów">edytuj</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Możliwe drogi rozwoju:</p>
+<ul>
+<li>poszerzanie <a href="/wiki/Szyna_danych" title="Szyna danych">szyny danych</a> i <a href="/wiki/Szyna_adresowa" title="Szyna adresowa">szyny adresowej</a></li>
+<li><a href="/wiki/Superskalarno%C5%9B%C4%87" title="Superskalarność">superskalarność</a></li>
+<li><a href="/wiki/Architektura_harwardzka" title="Architektura harwardzka">architektura harwardzka</a></li>
+<li>procesory w technologii <a href="/wiki/RISC" title="RISC">RISC</a></li>
+<li><a href="/wiki/Wielow%C4%85tkowo%C5%9B%C4%87" title="Wielowątkowość">wielowątkowość</a></li>
+<li><a href="/wiki/Wielozadaniowo%C5%9B%C4%87" title="Wielozadaniowość">wielozadaniowość</a> z <a href="/wiki/Wyw%C5%82aszczenie_(informatyka)" title="Wywłaszczenie (informatyka)">wywłaszczaniem</a></li>
+<li><a href="/wiki/Wirtualizacja" title="Wirtualizacja">wirtualizacja</a> pamięci</li>
+<li><a href="/wiki/Obliczenia_r%C3%B3wnoleg%C5%82e" title="Obliczenia równoległe">praca równoległa</a></li>
+<li>procesory wielordzeniowe</li>
+</ul>
+<h2><span class="mw-headline" id="Galeria">Galeria</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mikroprocesor&amp;action=edit&amp;section=15" title="Edytuj sekcję: Galeria">edytuj</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul class="gallery mw-gallery-traditional">
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:36.5px auto;"><a href="/wiki/Plik:KL_Intel_C8008-1.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/ba/KL_Intel_C8008-1.jpg/120px-KL_Intel_C8008-1.jpg" width="120" height="77" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/ba/KL_Intel_C8008-1.jpg/180px-KL_Intel_C8008-1.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/ba/KL_Intel_C8008-1.jpg/240px-KL_Intel_C8008-1.jpg 2x" data-file-width="1026" data-file-height="658" /></a></div>
+</div>
+<div class="gallerytext">
+<p><a href="/wiki/Intel_8008" title="Intel 8008">Intel 8008</a>, z 1972 został zaprojektowany w 10-mikronowej technologii PMOS (MOS with p-type transistors) i zawierał około 3500 tranzystorów. Miał rozmiar 4,9 mm x 6,7 mm, był to 18-pinowy dwustronny układ, taktowany częstotliwością 200 kHz i mógł wykonywać do 60000 instrukcji na sekundę.</p>
+</div>
+</div>
+</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:38px auto;"><a href="/wiki/Plik:Motorola_MC6800_microprocessor.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Motorola_MC6800_microprocessor.jpg/120px-Motorola_MC6800_microprocessor.jpg" width="120" height="74" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Motorola_MC6800_microprocessor.jpg/180px-Motorola_MC6800_microprocessor.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Motorola_MC6800_microprocessor.jpg/240px-Motorola_MC6800_microprocessor.jpg 2x" data-file-width="1575" data-file-height="975" /></a></div>
+</div>
+<div class="gallerytext">
+<p>Mikroprocesor <a href="/wiki/Motorola_6800" title="Motorola 6800">Motorola 6800</a>, opracowany w <a href="/wiki/1974" title="1974">1974</a>, składał się z 4000 tranzystorów i był wykonany w technologii NMOS. Oferował on kilka ważnych korzyści w porównaniu z 8080, w tym m.in. ulepszoną pracę i potrzebę tylko jednego 5V źródła zasilania. Zawierał dwa 8-bitowe rejestry ogólnego przeznaczenia i pojedynczy rejestr indeksowy</p>
+</div>
+</div>
+</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:45px auto;"><a href="/wiki/Plik:KL_MOS_6502.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/43/KL_MOS_6502.jpg/120px-KL_MOS_6502.jpg" width="120" height="60" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/43/KL_MOS_6502.jpg/180px-KL_MOS_6502.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/43/KL_MOS_6502.jpg/240px-KL_MOS_6502.jpg 2x" data-file-width="1350" data-file-height="675" /></a></div>
+</div>
+<div class="gallerytext">
+<p>Mikroprocesor <a href="/wiki/MOS_Technology_6502" title="MOS Technology 6502">MOS 6502</a>, 1975</p>
+</div>
+</div>
+</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:47.5px auto;"><a href="/wiki/Plik:KL_Intel_P8085AH.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/52/KL_Intel_P8085AH.jpg/120px-KL_Intel_P8085AH.jpg" width="120" height="55" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/52/KL_Intel_P8085AH.jpg/180px-KL_Intel_P8085AH.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/52/KL_Intel_P8085AH.jpg/240px-KL_Intel_P8085AH.jpg 2x" data-file-width="1551" data-file-height="708" /></a></div>
+</div>
+<div class="gallerytext">
+<p><a href="/wiki/Intel_8085" title="Intel 8085">Intel 8085</a> z 1976</p>
+</div>
+</div>
+</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:36.5px auto;"><a href="/wiki/Plik:MC6809EP.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/MC6809EP.jpg/120px-MC6809EP.jpg" width="120" height="77" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/MC6809EP.jpg/180px-MC6809EP.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/2c/MC6809EP.jpg/240px-MC6809EP.jpg 2x" data-file-width="901" data-file-height="576" /></a></div>
+</div>
+<div class="gallerytext">
+<p><a href="/wiki/Motorola_6809" title="Motorola 6809">Motorola 6809</a>E taktowana zegarem 1 MHz <a href="/wiki/Architektura_8-bitowa" title="Architektura 8-bitowa">8-bitowy</a> mikroprocesor firmy <a href="/wiki/Motorola" title="Motorola">Motorola</a> wprowadzony na rynek w <a href="/wiki/1979_w_informatyce" title="1979 w informatyce">1979</a></p>
+</div>
+</div>
+</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:48px auto;"><a href="/wiki/Plik:KL_Motorola_MC68000_CDIP.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/40/KL_Motorola_MC68000_CDIP.jpg/120px-KL_Motorola_MC68000_CDIP.jpg" width="120" height="54" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/40/KL_Motorola_MC68000_CDIP.jpg/180px-KL_Motorola_MC68000_CDIP.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/40/KL_Motorola_MC68000_CDIP.jpg/240px-KL_Motorola_MC68000_CDIP.jpg 2x" data-file-width="2300" data-file-height="1044" /></a></div>
+</div>
+<div class="gallerytext">
+<p>Mikroprocesor <a href="/wiki/MC68000" title="MC68000">Motorola 68000</a> (32-bitowy z 16-bitową <a href="/wiki/Szyna_danych" title="Szyna danych">szyną danych</a> i 24-bitową szynę adresową), 1979</p>
+</div>
+</div>
+</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:46.5px auto;"><a href="/wiki/Plik:KL_Motorola_MC68008.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9b/KL_Motorola_MC68008.jpg/120px-KL_Motorola_MC68008.jpg" width="120" height="57" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9b/KL_Motorola_MC68008.jpg/180px-KL_Motorola_MC68008.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/9b/KL_Motorola_MC68008.jpg/240px-KL_Motorola_MC68008.jpg 2x" data-file-width="1482" data-file-height="702" /></a></div>
+</div>
+<div class="gallerytext">
+<p>Mikroprocesor <a href="/wiki/MC68008" title="MC68008">Motorola 68008</a> (32-bitowy z 8-bitową <a href="/wiki/Szyna_danych" title="Szyna danych">szyną danych</a> i 20-bitową szynę adresową)</p>
+</div>
+</div>
+</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:44px auto;"><a href="/wiki/Plik:KL_NEC_V20.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ec/KL_NEC_V20.jpg/120px-KL_NEC_V20.jpg" width="120" height="62" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ec/KL_NEC_V20.jpg/180px-KL_NEC_V20.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/ec/KL_NEC_V20.jpg/240px-KL_NEC_V20.jpg 2x" data-file-width="1467" data-file-height="756" /></a></div>
+</div>
+<div class="gallerytext">
+<p>Mikroprocesor <a href="/wiki/NEC_V20" title="NEC V20">NEC V20</a> (16-bitowy, z 8-bitową szyną danych i 20-bitową szyną adresową, miał 29.000 tranzystorów taktowanych zegarem 8 MHz, zgodny z procesorem Intel 8088 i szybszy od niego o ok. 30%), 1984</p>
+</div>
+</div>
+</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:35px auto;"><a href="/wiki/Plik:UPD8086D-2_NEC_1984year_19week_JAPAN.JPG" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a0/UPD8086D-2_NEC_1984year_19week_JAPAN.JPG/120px-UPD8086D-2_NEC_1984year_19week_JAPAN.JPG" width="120" height="80" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a0/UPD8086D-2_NEC_1984year_19week_JAPAN.JPG/180px-UPD8086D-2_NEC_1984year_19week_JAPAN.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a0/UPD8086D-2_NEC_1984year_19week_JAPAN.JPG/240px-UPD8086D-2_NEC_1984year_19week_JAPAN.JPG 2x" data-file-width="3264" data-file-height="2176" /></a></div>
+</div>
+<div class="gallerytext">
+<p>Mikroprocesor NEC uPD8086D-2 (8MHz) z 1984roku 19tygodnia wyprodukowany w Japonii (klon Intel D8086-2)</p>
+</div>
+</div>
+</li>
+</ul>
+<h2><span id="Zobacz_te.C5.BC"></span><span class="mw-headline" id="Zobacz_też">Zobacz też</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mikroprocesor&amp;action=edit&amp;section=16" title="Edytuj sekcję: Zobacz też">edytuj</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Procesor" title="Procesor">procesor</a></li>
+<li><a href="/wiki/Mikrokontroler" title="Mikrokontroler">mikrokontroler</a></li>
+<li><a href="/wiki/Mikroprocesor_programowy" title="Mikroprocesor programowy">mikroprocesor programowy</a></li>
+<li><a href="/wiki/Procesor_graficzny" title="Procesor graficzny">GPU</a></li>
+<li><a href="/wiki/F14_CADC" title="F14 CADC">F14 CADC</a> – pierwszy <a href="/wiki/Si%C5%82y_zbrojne" title="Siły zbrojne">wojskowy</a> mikroprocesor (o rok starszy i bardziej zaawansowany technicznie od <a href="/wiki/Intel_4004" title="Intel 4004">Intela 4004</a>)</li>
+</ul>
+<p><br /></p>
+<h2><span class="mw-headline" id="Przypisy">Przypisy</span></h2>
+<div class="do-not-make-smaller refsection references-column-count references-1column">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><span class="citation"><a rel="nofollow" class="external text" href="http://www.chip.pl/news/sprzet/procesory/2011/11/w-polsce-powstal-najwydajniejszy-na-swiecie-procesor"><i>W Polsce powstał najwydajniejszy na świecie procesor</i></a>, www.chip.pl <span class="accessdate">[dostęp 2016-11-30]</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft.gengre=book&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.btitle=W+Polsce+powsta%C5%82+najwydajniejszy+na+%C5%9Bwiecie+procesor&amp;rft_id=http%3A%2F%2Fwww.chip.pl%2Fnews%2Fsprzet%2Fprocesory%2F2011%2F11%2Fw-polsce-powstal-najwydajniejszy-na-swiecie-procesor" style="display:none">&#160;</span>.</span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><span class="citation"><a rel="nofollow" class="external text" href="http://www.pcworld.pl/news/403100/D32PRO.nie.pierwszy.32.bitowy.polski.procesor.Konkurencja.dla.ARM.html"><i>D32PRO, (nie?)pierwszy 32-bitowy polski procesor. Konkurencja dla ARM</i></a>, „PCWorld” <span class="accessdate">[dostęp 2016-11-30]</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft.gengre=article&amp;rft.atitle=D32PRO%2C+%28nie%3F%29pierwszy+32-bitowy+polski+procesor.+Konkurencja+dla+ARM&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.jtitle=PCWorld&amp;rft_id=http%3A%2F%2Fwww.pcworld.pl%2Fnews%2F403100%2FD32PRO.nie.pierwszy.32.bitowy.polski.procesor.Konkurencja.dla.ARM.html" style="display:none">&#160;</span>.</span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text"><span class="citation"><a rel="nofollow" class="external text" href="http://gadzetomania.pl/8002,procesor-warszawa-i-cala-ta-wrzawa"><i>Procesor Warszawa i cała ta wrzawa</i></a>, „Gadżetomania.pl” <span class="accessdate">[dostęp 2016-11-30]</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft.gengre=article&amp;rft.atitle=Procesor+Warszawa+i+ca%C5%82a+ta+wrzawa&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.jtitle=Gad%C5%BCetomania.pl&amp;rft_id=http%3A%2F%2Fgadzetomania.pl%2F8002%2Cprocesor-warszawa-i-cala-ta-wrzawa" style="display:none">&#160;</span>.</span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><a href="#cite_ref-4">↑</a></span> <span class="reference-text"><span class="citation"><a rel="nofollow" class="external text" href="https://panorama.tvp.pl/28024285/polski-mikroprocesor"><i>Polski mikroprocesor</i></a> <span class="accessdate">[dostęp 2016-11-30]</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft.gengre=book&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.btitle=Polski+mikroprocesor&amp;rft_id=https%3A%2F%2Fpanorama.tvp.pl%2F28024285%2Fpolski-mikroprocesor" style="display:none">&#160;</span>.</span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Bibliografia">Bibliografia</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mikroprocesor&amp;action=edit&amp;section=17" title="Edytuj sekcję: Bibliografia">edytuj</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>P. Misiurewicz, <i>Podstawy techniki mikroprocesorowej</i>, WNT, 1991, ​<a href="/wiki/Specjalna:Ksi%C4%85%C5%BCki/8320413397" title="Specjalna:Książki/8320413397">ISBN&#160;<span class="isbn">83-204-1339-7</span></a>​.</li>
+<li>K. Badźmirowski, J. Pieńkos, W. Piestrzyński, <i>Systemy mikroprocesorowe</i>, WNT W-wa, 1991, ​<a href="/wiki/Specjalna:Ksi%C4%85%C5%BCki/8320402581" title="Specjalna:Książki/8320402581">ISBN&#160;<span class="isbn">83-204-0258-1</span></a>​.</li>
+<li>E.E. Klingman, <i>Projektowanie systemów mikroprocesorowych</i>, WNT, W-wa 1992, ​<a href="/wiki/Specjalna:Ksi%C4%85%C5%BCki/8320404126" title="Specjalna:Książki/8320404126">ISBN&#160;<span class="isbn">83-204-0412-6</span></a>​.</li>
+</ul>
+<p><br /></p>
+<table class="infobox noprint plainlinks" cellpadding="4">
+<tr>
+<td style="vertical-align:middle; text-align:center; width:30px;"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/21px-Commons-logo.svg.png" width="21" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/31px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/42px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></td>
+<td style="line-height:normal; vertical-align:middle; text-align:center;">W <a href="/wiki/Wikimedia_Commons" title="Wikimedia Commons">Wikimedia Commons</a> znajdują się multimedia związane z tematem:<br />
+<b><a class="external text" href="https://commons.wikimedia.org/wiki/Category:Microprocessors?uselang=pl">Mikroprocesory</a></b></td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1325
+Cached time: 20171205183304
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.136 seconds
+Real time usage: 0.187 seconds
+Preprocessor visited node count: 784/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 6630/2097152 bytes
+Template argument size: 205/2097152 bytes
+Highest expansion depth: 5/40
+Expensive parser function count: 3/500
+Lua time usage: 0.033/10.000 seconds
+Lua memory usage: 1.79 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   89.233      1 -total
+ 69.21%   61.754      1 Szablon:Przypisy
+ 60.81%   54.262      4 Szablon:Cytuj
+ 17.37%   15.497      1 Szablon:Commonscat
+ 15.67%   13.987      1 Szablon:Projekt_siostrzany
+ 13.14%   11.722      3 Szablon:ISBN
+ 12.01%   10.718      1 Szablon:Ikona
+-->
+</div>
+<!-- Saved in parser cache with key plwiki:stable-pcache:idhash:3697-0!canonical and timestamp 20171205183304 and revision id 50665023
+ -->
+<noscript><img src="//pl.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Źródło: „<a dir="ltr" href="https://pl.wikipedia.org/w/index.php?title=Mikroprocesor&amp;oldid=50665023">https://pl.wikipedia.org/w/index.php?title=Mikroprocesor&amp;oldid=50665023</a>”					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Specjalna:Kategorie" title="Specjalna:Kategorie">Kategoria</a>: <ul><li><a href="/wiki/Kategoria:Procesory" title="Kategoria:Procesory">Procesory</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Menu nawigacyjne</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Narzędzia osobiste</h3>
+						<ul>
+							<li id="pt-anonuserpage">Nie jesteś zalogowany</li><li id="pt-anontalk"><a href="/wiki/Specjalna:Moja_dyskusja" title="Dyskusja użytkownika dla tego adresu IP [n]" accesskey="n">Dyskusja</a></li><li id="pt-anoncontribs"><a href="/wiki/Specjalna:M%C3%B3j_wk%C5%82ad" title="Lista edycji wykonanych z tego adresu IP [y]" accesskey="y">Edycje</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Specjalna:Utw%C3%B3rz_konto&amp;returnto=Mikroprocesor" title="Zachęcamy do stworzenia konta i zalogowania, ale nie jest to obowiązkowe.">Utwórz konto</a></li><li id="pt-login"><a href="/w/index.php?title=Specjalna:Zaloguj&amp;returnto=Mikroprocesor" title="Zachęcamy do zalogowania się, choć nie jest to obowiązkowe. [o]" accesskey="o">Zaloguj się</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Przestrzenie nazw</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Mikroprocesor" title="Zobacz stronę treści [c]" accesskey="c">Artykuł</a></span></li><li id="ca-talk"><span><a href="/wiki/Dyskusja:Mikroprocesor" rel="discussion" title="Dyskusja o zawartości tej strony [t]" accesskey="t">Dyskusja</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Warianty</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Widok</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Mikroprocesor">Czytaj</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Mikroprocesor&amp;action=edit" title="Edytuj tę stronę [e]" accesskey="e">Edytuj</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Mikroprocesor&amp;action=history" title="Starsze wersje tej strony. [h]" accesskey="h">Historia i autorzy</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>Więcej</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Szukaj</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Przeszukaj Wikipedię" title="Przeszukaj Wikipedię [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Specjalna:Szukaj" name="title"/><input type="submit" name="fulltext" value="Szukaj" title="Szukaj wprowadzonego tekstu w treści stron" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Przejdź" title="Przejdź do strony o dokładnie takim tytule, o ile istnieje" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna"  title="Strona główna"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Nawigacja</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna" title="Przejdź na stronę główną [z]" accesskey="z">Strona główna</a></li><li id="n-randompage"><a href="/wiki/Specjalna:Losowa_strona" title="Załaduj losową stronę [x]" accesskey="x">Losuj artykuł</a></li><li id="n-Kategorie"><a href="/wiki/Portal:Kategorie_G%C5%82%C3%B3wne">Kategorie artykułów</a></li><li id="n-Featured-articles"><a href="/wiki/Wikipedia:Wyr%C3%B3%C5%BCniona_zawarto%C5%9B%C4%87_Wikipedii">Najlepsze artykuły</a></li><li id="n-FAQ"><a href="/wiki/Pomoc:FAQ">Częste pytania (FAQ)</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-zmiany' aria-labelledby='p-zmiany-label'>
+			<h3 id='p-zmiany-label'>Dla czytelników</h3>
+			<div class="body">
+								<ul>
+					<li id="n-czytelnicy"><a href="/wiki/Wikipedia:O_Wikipedii">O Wikipedii</a></li><li id="n-bug_in_article"><a href="/wiki/Wikipedia:Zg%C5%82o%C5%9B_b%C5%82%C4%85d_w_artykule">Zgłoś błąd</a></li><li id="n-bad-image"><a href="/wiki/Wikipedia:Zg%C5%82oszone_grafiki">Zgłoś błąd w pliku</a></li><li id="n-contact"><a href="/wiki/Wikipedia:Kontakt_z_wikipedystami">Kontakt</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_pl.wikipedia.org&amp;uselang=pl" title="Pomóż nam">Wspomóż Wikipedię</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-edytorzy' aria-labelledby='p-edytorzy-label'>
+			<h3 id='p-edytorzy-label'>Dla wikipedystów</h3>
+			<div class="body">
+								<ul>
+					<li id="n-pierwsze-kroki"><a href="/wiki/Pomoc:Pierwsze_kroki">Pierwsze kroki</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Portal_wikipedyst%C3%B3w" title="O projekcie - co możesz zrobić, gdzie możesz znaleźć informacje">Portal wikipedystów</a></li><li id="n-Noticeboard"><a href="/wiki/Wikipedia:Tablica_og%C5%82osze%C5%84">Ogłoszenia</a></li><li id="n-Guidelines"><a href="/wiki/Wikipedia:Zasady">Zasady</a></li><li id="n-helppage-name"><a href="/wiki/Pomoc:Spis_tre%C5%9Bci">Pomoc</a></li><li id="n-recentchanges"><a href="/wiki/Specjalna:Ostatnie_zmiany" title="Lista ostatnich zmian w Wikipedii. [r]" accesskey="r">Ostatnie zmiany</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Narzędzia</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Specjalna:Linkuj%C4%85ce/Mikroprocesor" title="Pokaż listę wszystkich stron linkujących do tej strony [j]" accesskey="j">Linkujące</a></li><li id="t-recentchangeslinked"><a href="/wiki/Specjalna:Zmiany_w_linkowanych/Mikroprocesor" rel="nofollow" title="Ostatnie zmiany w stronach, do których ta strona linkuje [k]" accesskey="k">Zmiany w linkowanych</a></li><li id="t-upload"><a href="//pl.wikipedia.org/wiki/Wikipedia:Prześlij_plik" title="Prześlij pliki [u]" accesskey="u">Prześlij plik</a></li><li id="t-specialpages"><a href="/wiki/Specjalna:Strony_specjalne" title="Lista wszystkich specjalnych stron [q]" accesskey="q">Strony specjalne</a></li><li id="t-permalink"><a href="/w/index.php?title=Mikroprocesor&amp;oldid=50665023" title="Stały link do tej wersji strony">Link do tej wersji</a></li><li id="t-info"><a href="/w/index.php?title=Mikroprocesor&amp;action=info" title="Więcej informacji na temat tej strony">Informacje o tej stronie</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q5297" title="Link do powiązanego elementu w repozytorium danych [g]" accesskey="g">Element Wikidanych</a></li><li id="t-cite"><a href="/w/index.php?title=Specjalna:Cytuj&amp;page=Mikroprocesor&amp;id=50665023" title="Informacja o tym jak należy cytować tę stronę">Cytowanie tego artykułu</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Drukuj lub eksportuj</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Specjalna:Ksi%C4%85%C5%BCka&amp;bookcmd=book_creator&amp;referer=Mikroprocesor">Utwórz książkę</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Specjalna:ElectronPdf&amp;page=Mikroprocesor&amp;action=show-download-screen">Pobierz jako PDF</a></li><li id="t-print"><a href="/w/index.php?title=Mikroprocesor&amp;printable=yes" title="Wersja do wydruku [p]" accesskey="p">Wersja do druku</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>W innych projektach</h3>
+			<div class="body">
+								<ul>
+					<li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:Microprocessors" hreflang="en">Wikimedia Commons</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>W innych językach</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-af"><a href="https://af.wikipedia.org/wiki/Mikroverwerker" title="Mikroverwerker – afrikaans" lang="af" hreflang="af" class="interlanguage-link-target">Afrikaans</a></li><li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D9%85%D8%B9%D8%A7%D9%84%D8%AC_%D8%AF%D9%82%D9%8A%D9%82" title="معالج دقيق – arabski" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-an"><a href="https://an.wikipedia.org/wiki/Microprocesador" title="Microprocesador – aragoński" lang="an" hreflang="an" class="interlanguage-link-target">Aragonés</a></li><li class="interlanguage-link interwiki-az"><a href="https://az.wikipedia.org/wiki/Mikroprosessor" title="Mikroprosessor – azerbejdżański" lang="az" hreflang="az" class="interlanguage-link-target">Azərbaycanca</a></li><li class="interlanguage-link interwiki-bn"><a href="https://bn.wikipedia.org/wiki/%E0%A6%AE%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%B8%E0%A7%87%E0%A6%B8%E0%A6%B0" title="মাইক্রোপ্রসেসর – bengalski" lang="bn" hreflang="bn" class="interlanguage-link-target">বাংলা</a></li><li class="interlanguage-link interwiki-be"><a href="https://be.wikipedia.org/wiki/%D0%9C%D1%96%D0%BA%D1%80%D0%B0%D0%BF%D1%80%D0%B0%D1%86%D1%8D%D1%81%D0%B0%D1%80" title="Мікрапрацэсар – białoruski" lang="be" hreflang="be" class="interlanguage-link-target">Беларуская</a></li><li class="interlanguage-link interwiki-be-x-old"><a href="https://be-x-old.wikipedia.org/wiki/%D0%9C%D1%96%D0%BA%D1%80%D0%B0%D0%BF%D1%80%D0%B0%D1%86%D1%8D%D1%81%D0%B0%D1%80" title="Мікрапрацэсар – Belarusian (Taraškievica orthography)" lang="be-x-old" hreflang="be-x-old" class="interlanguage-link-target">Беларуская (тарашкевіца)‎</a></li><li class="interlanguage-link interwiki-bg"><a href="https://bg.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D0%BE%D1%80" title="Микропроцесор – bułgarski" lang="bg" hreflang="bg" class="interlanguage-link-target">Български</a></li><li class="interlanguage-link interwiki-br"><a href="https://br.wikipedia.org/wiki/Mikroprosesor" title="Mikroprosesor – bretoński" lang="br" hreflang="br" class="interlanguage-link-target">Brezhoneg</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Microprocessador" title="Microprocessador – kataloński" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Mikroprocesor" title="Mikroprocesor – czeski" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-da"><a href="https://da.wikipedia.org/wiki/Mikroprocessor" title="Mikroprocessor – duński" lang="da" hreflang="da" class="interlanguage-link-target">Dansk</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Mikroprozessor" title="Mikroprozessor – niemiecki" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-et"><a href="https://et.wikipedia.org/wiki/Mikroprotsessor" title="Mikroprotsessor – estoński" lang="et" hreflang="et" class="interlanguage-link-target">Eesti</a></li><li class="interlanguage-link interwiki-el"><a href="https://el.wikipedia.org/wiki/%CE%9C%CE%B9%CE%BA%CF%81%CE%BF%CE%B5%CF%80%CE%B5%CE%BE%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CF%84%CE%AE%CF%82" title="Μικροεπεξεργαστής – grecki" lang="el" hreflang="el" class="interlanguage-link-target">Ελληνικά</a></li><li class="interlanguage-link interwiki-en"><a href="https://en.wikipedia.org/wiki/Microprocessor" title="Microprocessor – angielski" lang="en" hreflang="en" class="interlanguage-link-target">English</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Microprocesador" title="Microprocesador – hiszpański" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-eo"><a href="https://eo.wikipedia.org/wiki/Mikroprocezilo" title="Mikroprocezilo – esperanto" lang="eo" hreflang="eo" class="interlanguage-link-target">Esperanto</a></li><li class="interlanguage-link interwiki-ext"><a href="https://ext.wikipedia.org/wiki/Microprohessaol" title="Microprohessaol – estremadurski" lang="ext" hreflang="ext" class="interlanguage-link-target">Estremeñu</a></li><li class="interlanguage-link interwiki-eu"><a href="https://eu.wikipedia.org/wiki/Mikroprozesadore" title="Mikroprozesadore – baskijski" lang="eu" hreflang="eu" class="interlanguage-link-target">Euskara</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%B1%DB%8C%D8%B2%D9%BE%D8%B1%D8%AF%D8%A7%D8%B2%D9%86%D8%AF%D9%87" title="ریزپردازنده – perski" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Microprocesseur" title="Microprocesseur – francuski" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-gl"><a href="https://gl.wikipedia.org/wiki/Microprocesador" title="Microprocesador – galicyjski" lang="gl" hreflang="gl" class="interlanguage-link-target">Galego</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%ED%94%84%EB%A1%9C%EC%84%B8%EC%84%9C" title="마이크로프로세서 – koreański" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-hi"><a href="https://hi.wikipedia.org/wiki/%E0%A4%AE%E0%A4%BE%E0%A4%87%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A5%8B%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%8B%E0%A4%B8%E0%A5%87%E0%A4%B8%E0%A4%B0" title="माइक्रोप्रोसेसर – hindi" lang="hi" hreflang="hi" class="interlanguage-link-target">हिन्दी</a></li><li class="interlanguage-link interwiki-hr"><a href="https://hr.wikipedia.org/wiki/Mikroprocesor" title="Mikroprocesor – chorwacki" lang="hr" hreflang="hr" class="interlanguage-link-target">Hrvatski</a></li><li class="interlanguage-link interwiki-id"><a href="https://id.wikipedia.org/wiki/Mikroprosesor" title="Mikroprosesor – indonezyjski" lang="id" hreflang="id" class="interlanguage-link-target">Bahasa Indonesia</a></li><li class="interlanguage-link interwiki-is"><a href="https://is.wikipedia.org/wiki/%C3%96rgj%C3%B6rvi" title="Örgjörvi – islandzki" lang="is" hreflang="is" class="interlanguage-link-target">Íslenska</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Microprocessore" title="Microprocessore – włoski" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-kn"><a href="https://kn.wikipedia.org/wiki/%E0%B2%AE%E0%B3%88%E0%B2%95%E0%B3%8D%E0%B2%B0%E0%B3%8A%E0%B2%AA%E0%B3%8D%E0%B2%B0%E0%B3%8A%E0%B2%B8%E0%B3%86%E0%B2%B8%E0%B2%B0%E0%B3%8D" title="ಮೈಕ್ರೊಪ್ರೊಸೆಸರ್ – kannada" lang="kn" hreflang="kn" class="interlanguage-link-target">ಕನ್ನಡ</a></li><li class="interlanguage-link interwiki-ka"><a href="https://ka.wikipedia.org/wiki/%E1%83%9B%E1%83%98%E1%83%99%E1%83%A0%E1%83%9D%E1%83%9E%E1%83%A0%E1%83%9D%E1%83%AA%E1%83%94%E1%83%A1%E1%83%9D%E1%83%A0%E1%83%98" title="მიკროპროცესორი – gruziński" lang="ka" hreflang="ka" class="interlanguage-link-target">ქართული</a></li><li class="interlanguage-link interwiki-kk"><a href="https://kk.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80" title="Микропроцессор – kazachski" lang="kk" hreflang="kk" class="interlanguage-link-target">Қазақша</a></li><li class="interlanguage-link interwiki-ku"><a href="https://ku.wikipedia.org/wiki/M%C3%AEkroprosesor" title="Mîkroprosesor – kurdyjski" lang="ku" hreflang="ku" class="interlanguage-link-target">Kurdî</a></li><li class="interlanguage-link interwiki-ky"><a href="https://ky.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80" title="Микропроцессор – kirgiski" lang="ky" hreflang="ky" class="interlanguage-link-target">Кыргызча</a></li><li class="interlanguage-link interwiki-la"><a href="https://la.wikipedia.org/wiki/Microprocessorium" title="Microprocessorium – łaciński" lang="la" hreflang="la" class="interlanguage-link-target">Latina</a></li><li class="interlanguage-link interwiki-lv"><a href="https://lv.wikipedia.org/wiki/Mikroprocesors" title="Mikroprocesors – łotewski" lang="lv" hreflang="lv" class="interlanguage-link-target">Latviešu</a></li><li class="interlanguage-link interwiki-lt"><a href="https://lt.wikipedia.org/wiki/Mikroprocesorius" title="Mikroprocesorius – litewski" lang="lt" hreflang="lt" class="interlanguage-link-target">Lietuvių</a></li><li class="interlanguage-link interwiki-mk"><a href="https://mk.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83%D0%B2%D0%B0%D1%87" title="Микрообработувач – macedoński" lang="mk" hreflang="mk" class="interlanguage-link-target">Македонски</a></li><li class="interlanguage-link interwiki-ml"><a href="https://ml.wikipedia.org/wiki/%E0%B4%AE%E0%B5%88%E0%B4%95%E0%B5%8D%E0%B4%B0%E0%B5%8B%E0%B4%AA%E0%B5%8D%E0%B4%B0%E0%B5%8A%E0%B4%B8%E0%B4%B8%E0%B5%8D%E0%B4%B8%E0%B5%BC" title="മൈക്രോപ്രൊസസ്സർ – malajalam" lang="ml" hreflang="ml" class="interlanguage-link-target">മലയാളം</a></li><li class="interlanguage-link interwiki-mr"><a href="https://mr.wikipedia.org/wiki/%E0%A4%AE%E0%A4%BE%E0%A4%AF%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A5%8B%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%8B%E0%A4%B8%E0%A5%87%E0%A4%B8%E0%A4%B0" title="मायक्रोप्रोसेसर – marathi" lang="mr" hreflang="mr" class="interlanguage-link-target">मराठी</a></li><li class="interlanguage-link interwiki-xmf"><a href="https://xmf.wikipedia.org/wiki/%E1%83%9B%E1%83%98%E1%83%99%E1%83%A0%E1%83%9D%E1%83%9E%E1%83%A0%E1%83%9D%E1%83%AA%E1%83%94%E1%83%A1%E1%83%9D%E1%83%A0%E1%83%98" title="მიკროპროცესორი – megrelski" lang="xmf" hreflang="xmf" class="interlanguage-link-target">მარგალური</a></li><li class="interlanguage-link interwiki-ms"><a href="https://ms.wikipedia.org/wiki/Mikropemproses" title="Mikropemproses – malajski" lang="ms" hreflang="ms" class="interlanguage-link-target">Bahasa Melayu</a></li><li class="interlanguage-link interwiki-mn"><a href="https://mn.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BA%D1%80%D0%BE_%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80" title="Микро процессор – mongolski" lang="mn" hreflang="mn" class="interlanguage-link-target">Монгол</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Microprocessor" title="Microprocessor – niderlandzki" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%97%E3%83%AD%E3%82%BB%E3%83%83%E3%82%B5" title="マイクロプロセッサ – japoński" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="https://no.wikipedia.org/wiki/Mikroprosessor" title="Mikroprosessor – norweski" lang="no" hreflang="no" class="interlanguage-link-target">Norsk</a></li><li class="interlanguage-link interwiki-pa"><a href="https://pa.wikipedia.org/wiki/%E0%A8%AE%E0%A8%BE%E0%A8%88%E0%A8%95%E0%A8%B0%E0%A9%8B%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A9%8B%E0%A8%B8%E0%A9%88%E0%A8%B8%E0%A8%B0" title="ਮਾਈਕਰੋਪ੍ਰੋਸੈਸਰ – pendżabski" lang="pa" hreflang="pa" class="interlanguage-link-target">ਪੰਜਾਬੀ</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Microprocessador" title="Microprocessador – portugalski" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ro"><a href="https://ro.wikipedia.org/wiki/Procesor" title="Procesor – rumuński" lang="ro" hreflang="ro" class="interlanguage-link-target">Română</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80" title="Микропроцессор – rosyjski" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sco"><a href="https://sco.wikipedia.org/wiki/Microprocessor" title="Microprocessor – scots" lang="sco" hreflang="sco" class="interlanguage-link-target">Scots</a></li><li class="interlanguage-link interwiki-scn"><a href="https://scn.wikipedia.org/wiki/Micruprucissura" title="Micruprucissura – sycylijski" lang="scn" hreflang="scn" class="interlanguage-link-target">Sicilianu</a></li><li class="interlanguage-link interwiki-si"><a href="https://si.wikipedia.org/wiki/%E0%B6%9A%E0%B7%8A%E0%B7%82%E0%B7%94%E0%B6%AF%E0%B7%8A%E2%80%8D%E0%B6%BB_%E0%B7%83%E0%B7%90%E0%B6%9A%E0%B7%83%E0%B7%94%E0%B6%B8%E0%B7%8A_%E0%B6%92%E0%B6%9A%E0%B6%9A%E0%B6%BA" title="ක්ෂුද්‍ර සැකසුම් ඒකකය – syngaleski" lang="si" hreflang="si" class="interlanguage-link-target">සිංහල</a></li><li class="interlanguage-link interwiki-simple"><a href="https://simple.wikipedia.org/wiki/Microprocessor" title="Microprocessor – Simple English" lang="simple" hreflang="simple" class="interlanguage-link-target">Simple English</a></li><li class="interlanguage-link interwiki-sk"><a href="https://sk.wikipedia.org/wiki/Mikroprocesor" title="Mikroprocesor – słowacki" lang="sk" hreflang="sk" class="interlanguage-link-target">Slovenčina</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D0%BE%D1%80" title="Микропроцесор – serbski" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Mikroprosessori" title="Mikroprosessori – fiński" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Mikroprocessor" title="Mikroprocessor – szwedzki" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-tl"><a href="https://tl.wikipedia.org/wiki/Microprocessor" title="Microprocessor – tagalski" lang="tl" hreflang="tl" class="interlanguage-link-target">Tagalog</a></li><li class="interlanguage-link interwiki-ta"><a href="https://ta.wikipedia.org/wiki/%E0%AE%A8%E0%AF%81%E0%AE%A3%E0%AF%8D%E0%AE%9A%E0%AF%86%E0%AE%AF%E0%AE%B2%E0%AE%BF" title="நுண்செயலி – tamilski" lang="ta" hreflang="ta" class="interlanguage-link-target">தமிழ்</a></li><li class="interlanguage-link interwiki-th"><a href="https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%A1%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B9%82%E0%B8%9E%E0%B8%A3%E0%B9%80%E0%B8%8B%E0%B8%AA%E0%B9%80%E0%B8%8B%E0%B8%AD%E0%B8%A3%E0%B9%8C" title="ไมโครโพรเซสเซอร์ – tajski" lang="th" hreflang="th" class="interlanguage-link-target">ไทย</a></li><li class="interlanguage-link interwiki-tg"><a href="https://tg.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D0%BF%D1%80%D0%B0%D1%82%D1%81%D0%B5%D1%81%D1%81%D0%BE%D1%80" title="Микропратсессор – tadżycki" lang="tg" hreflang="tg" class="interlanguage-link-target">Тоҷикӣ</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/Mikroi%C5%9Flemci" title="Mikroişlemci – turecki" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%9C%D1%96%D0%BA%D1%80%D0%BE%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D0%BE%D1%80" title="Мікропроцесор – ukraiński" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-ur"><a href="https://ur.wikipedia.org/wiki/%D8%AE%D8%B1%D8%AF_%D8%B9%D9%85%D9%84%DB%8C%DB%81" title="خرد عملیہ – urdu" lang="ur" hreflang="ur" class="interlanguage-link-target">اردو</a></li><li class="interlanguage-link interwiki-vec"><a href="https://vec.wikipedia.org/wiki/Microprocesor" title="Microprocesor – wenecki" lang="vec" hreflang="vec" class="interlanguage-link-target">Vèneto</a></li><li class="interlanguage-link interwiki-vi"><a href="https://vi.wikipedia.org/wiki/Vi_x%E1%BB%AD_l%C3%BD" title="Vi xử lý – wietnamski" lang="vi" hreflang="vi" class="interlanguage-link-target">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E5%BE%AE%E5%A4%84%E7%90%86%E5%99%A8" title="微处理器 – chiński" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q5297#sitelinks-wikipedia" title="Edytuj linki pomiędzy wersjami językowymi" class="wbc-editpage">Edytuj linki</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> Tę stronę ostatnio edytowano 21:32, 21 paź 2017.</li>
+								<li id="footer-info-copyright">Tekst udostępniany na <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.pl">licencji Creative Commons: uznanie autorstwa, na tych samych warunkach</a>, z możliwością obowiązywania dodatkowych ograniczeń.
+Zobacz szczegółowe informacje o <a href="https://wikimediafoundation.org/wiki/Warunki_korzystania">warunkach korzystania</a>.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Polityka ochrony prywatności</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:O_Wikipedii" title="Wikipedia:O Wikipedii">O Wikipedii</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:Korzystasz_z_Wikipedii_tylko_na_w%C5%82asn%C4%85_odpowiedzialno%C5%9B%C4%87" title="Wikipedia:Korzystasz z Wikipedii tylko na własną odpowiedzialność">Korzystasz z Wikipedii tylko na własną odpowiedzialność</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Dla deweloperów</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Komunikat na temat ciasteczek</a></li>
+								<li id="footer-places-mobileview"><a href="//pl.m.wikipedia.org/w/index.php?title=Mikroprocesor&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Wersja dla urządzeń mobilnych</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.136","walltime":"0.187","ppvisitednodes":{"value":784,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":6630,"limit":2097152},"templateargumentsize":{"value":205,"limit":2097152},"expansiondepth":{"value":5,"limit":40},"expensivefunctioncount":{"value":3,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%   89.233      1 -total"," 69.21%   61.754      1 Szablon:Przypisy"," 60.81%   54.262      4 Szablon:Cytuj"," 17.37%   15.497      1 Szablon:Commonscat"," 15.67%   13.987      1 Szablon:Projekt_siostrzany"," 13.14%   11.722      3 Szablon:ISBN"," 12.01%   10.718      1 Szablon:Ikona"]},"scribunto":{"limitreport-timeusage":{"value":"0.033","limit":"10.000"},"limitreport-memusage":{"value":1874707,"limit":52428800}},"cachereport":{"origin":"mw1325","timestamp":"20171205183304","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":106,"wgHostname":"mw1268"});});</script>
+	</body>
+</html>
